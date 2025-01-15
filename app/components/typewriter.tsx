@@ -9,7 +9,6 @@ const Typewriters = () => {
       loop={false}
       cursor
       cursorStyle='|'
-      cursorBlinking
       typeSpeed={100}
       deleteSpeed={100}
       delaySpeed={1000}
