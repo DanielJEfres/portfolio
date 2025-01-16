@@ -19,17 +19,17 @@ const Navigationbar = () => {
 
     return (
         <div
-            className={`fixed flex justify-center md:justify-between items-center gap-9 md:gap-6 font-roboto rounded-full shadow-md z-50 left-1/2 transform -translate-x-1/2 w-full md:w-3/4 py-2 md:px-6 
-            bottom-3 md:top-3 md:bottom-auto transition-colors duration-200 ${navBackground}`}>
+            className={`fixed flex justify-center md:justify-between items-center gap-5 md:gap-6 font-roboto rounded-full shadow-md z-50 left-1/2 transform -translate-x-1/2 px-2 md:w-3/4 py-2 md:px-6 
+            bottom-6 md:top-3 md:bottom-auto transition-colors duration-200  ${navBackground}`}>
             <div className="flex items-center justify-center md:justify-start gap-8">
                 {nav
                     .filter((item) => item.name === 'Home')
                     .map((item) => (
                         <Link href={item.path} key={item.name} className="group">
                             <div
-                                className={`flex items-center gap-1 md:gap-2 px-2 md:px-4 py-1 rounded-lg transition duration-300 
+                                className={`flex items-center gap-1 md:gap-2 px-3 md:px-4 py-1 rounded-lg transition duration-300 
                                 ${path === item.path ? 'bg-gray-400 text-black' : 'hover:bg-gray-400 hover:text-gray-600'}`}>
-                                <item.icon className={`w-10 h-10 md:w-7 md:h-7 transition-colors duration-200`} stroke={path === '/' ? 'black' : 'white'} />
+                                <item.icon className={`w-8 h-8 transition-colors duration-200`} stroke={path === '/' ? 'black' : 'white'} />
                                 <span className={`hidden md:block text-[10px] transition-colors duration-200 font-mono md:text-[20px] ${textColor}`}>
                                     {item.name}
                                 </span>
@@ -37,14 +37,14 @@ const Navigationbar = () => {
                         </Link>
                     ))}
             </div>
-            <div className="flex items-center justify-center md:justify-end gap-9 md:gap-3">
+            <div className="flex items-center justify-center md:justify-end gap-8 md:gap-3">
                 {nav
                     .filter((item) => item.name !== 'Home')
                     .map((item) => (
                         <Link href={item.path} key={item.name} className="group">
                             <div
-                                className={`flex items-center gap-1 md:gap-2 px-2 md:px-4 py-1 rounded-lg transition duration-300 ${path === item.path ? 'bg-gray-400 text-black' : 'hover:bg-gray-400 hover:text-gray-600'}`}>
-                                <item.icon className={`w-10 h-10 md:w-7 md:h-7 transition-colors duration-200`} stroke={path === '/' ? 'black' : 'white'} />
+                                className={`flex items-center gap-1 md:gap-2 px-4 md:px-4 py-1 rounded-lg transition duration-300 ${path === item.path ? 'bg-gray-400 text-black' : 'hover:bg-gray-400 hover:text-gray-600'}`}>
+                                <item.icon className={`w-8 h-8 transition-colors duration-200`} stroke={path === '/' ? 'black' : 'white'} />
                                 <span className={`hidden md:block text-[10px] transition-colors duration-200 font-mono md:text-[20px] ${textColor}`}>
                                     {item.name}
                                 </span>
