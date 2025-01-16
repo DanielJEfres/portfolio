@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import Typewriters from './components/typewriter' 
 import SocialLinks from './components/socialsbuttons'
+import Navigationbar from './components/navbar'
 
 export default function Home() {
     return (
         <main className="relative bg-bannerImg bg-no-repeat bg-cover bg-bottom w-full h-screen flex items-center justify-center">
-            
             <div className="relative backdrop-blur-sm border rounded-lg overflow-hidden border-[#524242]/40 shadow-md shadow-black sm:items-start mt-5 mb-5 px-5 sm:px-[20px] md:px-[30px] lg:px-[40px] xl:px-[50px] animate-fadeIn">
                 <h1 className="text-[#23282e] flex justify-center items-center text-[25px] sm:text-[20px] md:text-[30px] lg:text-[35px] font-mono mt-3">
                     hey! my name is
@@ -21,7 +21,6 @@ export default function Home() {
                     <SocialLinks />
                 </div>
             </div>
-
         </main>
     );
 }
