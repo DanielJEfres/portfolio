@@ -12,6 +12,7 @@ const config: Config = {
     extend: {
       animation: {
         fadeIn: "fadeIn 1s ease-in-out",
+        fadeIn2: "fadeIn 3s ease-in-out",
       },
       colors: {
         background: "var(--background)", 
@@ -22,6 +23,10 @@ const config: Config = {
       },
       keyframes: {
         fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        fadeIn2: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },

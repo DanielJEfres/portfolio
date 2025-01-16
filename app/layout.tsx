@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Personal Portfolio",
-  description: "Daniel Efres is a software engineer studying at the University of Central Florida.",
+  description: "Daniel Efres is an aspiring software engineer studying at the University of Central Florida.",
 };
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
     <html>
       <body>
         <Navigationbar />
-        <main className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <main className={`${geistSans.variable} ${geistMono.variable} antialiased animate-fadeIn bg-white`}>
           {children}
         </main>
       </body>
