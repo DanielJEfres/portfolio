@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const SocialLinks = () => {
   return (
-    <div className="flex justify-center items-center gap-12">
+    <div className="flex justify-center items-center gap-12 animate-fade-up duration-1000 delay-200">
       <Link href="https://www.linkedin.com/in/daniel-efres/" aria-label="LinkedIn">
         <div className="p-2 rounded-lg hover:bg-blue-700 transition duration-300">
           <img src="/images/linkedin.svg" className="w-9 h-9 md:w-11 md:h-11" />
