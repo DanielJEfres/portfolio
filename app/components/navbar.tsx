@@ -9,7 +9,7 @@ const Navigationbar = () => {
     const nav = [
         { name: 'Home', path: '/', icon: MountainSnow },
         { name: 'About', path: '/about', icon: UsersRound },
-        { name: 'Experiences', path: '/experiences', icon: BriefcaseBusiness },
+        { name: 'Experience', path: '/experience', icon: BriefcaseBusiness },
         { name: 'Projects', path: '/projects', icon: MonitorCog },
     ];
 
