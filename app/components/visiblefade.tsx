@@ -9,7 +9,7 @@ interface FadeInWhenVisibleProps {
 }
 
 const FadeInWhenVisible: React.FC<FadeInWhenVisibleProps> = ({ children, direction = "left" }) => {
-  const xOffset = direction === "left" ? -50 : 50; 
+  const xOffset = direction === "left" ? -100 : 100; 
 
   return (
     <motion.div
