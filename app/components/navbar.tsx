@@ -19,8 +19,8 @@ const Navigationbar = () => {
 
     return (
         <div
-            className={`fixed flex justify-center md:justify-between items-center gap-5 md:gap-6 font-roboto rounded-full shadow-md z-50 left-1/2 transform -translate-x-1/2 px-2 md:w-3/4 py-2 md:px-6 
-            bottom-6 md:top-3 md:bottom-auto transition-colors duration-500  ${navBackground}`}>
+            className={`fixed flex justify-center md:justify-between items-center gap-5 md:gap-6 font-roboto rounded-full shadow-md z-50 left-1/2 transform -translate-x-1/2 px-3 md:w-3/4 py-2 md:px-6 
+            bottom-4 md:top-3 md:bottom-auto transition-colors duration-500  ${navBackground}`}>
             <div className="flex items-center justify-center md:justify-start gap-8">
                 {nav
                     .filter((item) => item.name === 'Home')

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import FadeInWhenVisible from './visiblefade';
 
 type Card = {
   title: string;
@@ -18,6 +19,7 @@ type CardsProps = {
 
 export default function ProjectCards({ cards }: CardsProps) {
   return (
+    
     <div className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-7 lg:px-8 xl:px-10">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 w-full">
         {cards.map((item, index) => (
@@ -48,5 +50,6 @@ export default function ProjectCards({ cards }: CardsProps) {
         ))}
       </div>
     </div>
+    
   );
 }

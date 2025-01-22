@@ -4,7 +4,7 @@ import ProjectCards from "../components/pcard";
 export default function Projects() {
   const projectData = [
     {
-        title: 'KModo',
+        title: 'Kmodo',
         subtitle: 'Jan 2025 - Present',
         image: '/images/kmodo.png',
         body: '.',
@@ -42,7 +42,10 @@ export default function Projects() {
       <h1 className="flex mx-auto justify-center text-3xl  text-[#23282e] font-mono mb-8 md:mb-32 animate-fade-down duration-1000 underline decoration-blue-400 underline-offset-4 decoration-2">
         Projects
       </h1>
-      <ProjectCards cards={projectData} />
+      
+      <div className="animate-fade-up">
+        <ProjectCards cards={projectData} />
+      </div>
       <div className="pb-24" />
     </div>
   );

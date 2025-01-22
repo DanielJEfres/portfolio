@@ -44,13 +44,13 @@ export default function AboutMe() {
             <h1 className="flex mx-auto justify-center text-3xl text-[#23282e] font-mono mb-8 md:mb-24 animate-fade-down duration-1000 underline decoration-blue-400 underline-offset-4 decoration-2">
                 About Me
             </h1>
-            <div className="flex flex-col md:flex-row items-start justify-between mx-auto max-w-6xl md:gap-10 px-4 md:px-0 mb-8 md:mb-24">
-                <p className="text-[#23282e] md:mx-4 text-[15px] md:text-[21px] font-mono w-full md:w-1/2 mb-8 md:mb-0 md:mr-16 animate-fade-left duration-1000">
+            <div className="flex flex-col md:flex-row items-start justify-between animate-fade-up mx-auto max-w-6xl md:gap-10 px-4 md:px-0 mb-8 md:mb-24">
+                <div className="md:w-2/5 md:mx-4 w-full flex justify-center md:justify-end md: mb-8 duration-1000">
+                    <Image className="rounded-md w-full h-auto md:w-200 md:h-200 md:animate-fade-right" src="/images/snowpic1.jpg" alt="Picture of me" width={400} height={400} />
+                </div>
+                <p className="text-[#23282e] md:mx-4 text-[15px] md:text-[21px] font-mono w-full md:w-1/2 mb-8 md:mb-0 md:mr-16 md:animate-fade-left duration-1000">
                     Hello! I'm <a className="font-bold">Daniel Jose Efres</a>, an undergraduate student at the <Link className="text-yellow-500 hover:text-blue-400 duration-300 "href={"https:www.ucf.edu"}>University of Central Florida</Link> studying Computer Science and an aspiring software engineer. I'm currently an organizer for <Link className="text-yellow-500 hover:text-blue-400 duration-300 "href={"https://2024.knighthacks.org/"}>Knight Hacks</Link> , where I have the opportunity to help foster a community of innovation and learning. I have a strong passion for learning and am always looking for ways to grow and expand my skills as a developer. Over the past year, I've explored various areas of software development, with web development being my favorite so far. I’m excited to continue tackling new challenges and working with emerging technologies. In addition to software development, I enjoy working out, playing games, and capturing moments through photography — one of my photos even serves as the background for my home page!
                 </p>
-                <div className="md:w-2/5 md:mx-4 w-full flex justify-center md:justify-end animate-fade-right duration-1000">
-                    <Image className="rounded-md w-full h-auto md:w-200 md:h-200" src="/images/snowpic1.jpg" alt="Picture of me" width={400} height={400} />
-                </div>
             </div>
 
             <h1 className="flex mx-auto justify-center text-3xl text-[#23282e] font-mono mb-16 md:mb-24 mt-10 animate-fade-up duration-1000 underline decoration-blue-400 underline-offset-4 decoration-2">
