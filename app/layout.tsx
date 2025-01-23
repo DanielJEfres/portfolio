@@ -25,9 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className="bg-[#F3F4F6]">
+      <body className="bg-[#F3F4F6] animate-fadeIn">
         <Navigationbar />
-        <main className={`${geistSans.variable} ${geistMono.variable} antialiased animate-fadeIn`}>
+        <main className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           {children}
         </main>
       </body>
