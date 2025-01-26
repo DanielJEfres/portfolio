@@ -31,7 +31,7 @@ export default function ExperienceCards({ experiences }: CardsProps) {
         {experiences.map((item, index) => (
           <div key={index} className={`flex flex-col sm:flex-row items-center mb-24 animate-duration-1000 animate-fade-down ${index % 2 === 0 ? 'sm:flex-row-reverse' : 'sm:flex-row' }`} style={{ animationDelay: `${2200 * index}ms`,}}>
             <div
-              className={`w-full sm:w-[48%] p-6 rounded-3xl text-[#23282e] shadow-lg border-2 ${item.borderColor} ${item.hoverBorderColor} hover:${item.hoverTextColor} transform transition-all hover:scale-105`}>
+              className={`w-full sm:w-[48%] p-6 rounded-3xl text-[#23282e] shadow-lg border-2 ${item.borderColor} ${item.hoverBorderColor} hover:${item.hoverTextColor} transform transition-all`}>
               <h3 className={`text-lg sm:text-xl font-mono font-bold mb-2 ${item.textColor}`}>
                 {item.title}
               </h3>

@@ -41,7 +41,7 @@ const experiences = [
       image: '/images/knighthacks.jpg',
       textColor: 'text-[#a10f7d]', 
       borderColor: 'border-purple-700',
-      hoverBorderColor: 'hover:border-blue-400',
+      hoverBorderColor: 'hover:border-black',
       hoverTextColor: 'hover:text-[#a10f7d]',
     },
     {
@@ -54,7 +54,7 @@ const experiences = [
       image: '/images/sfmhr.jpg',
       textColor: 'text-[#18cc45]', 
       borderColor: 'border-green-400', 
-      hoverBorderColor: 'hover:border-blue-300', 
+      hoverBorderColor: 'hover:border-purple-700', 
       hoverTextColor: 'hover:text-[#18cc45]',
     },
   ];
