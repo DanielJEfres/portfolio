@@ -14,8 +14,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Personal Portfolio",
-  description: "Daniel Efres is an aspiring software engineer studying at the University of Central Florida.",
+  title: "Daniel Efres",
+  description:
+      "Daniel Efres is an undergraduate student at the University of Central Florida and an aspiring software engineer.",
+  keywords: [
+      "Daniel Efres",
+      "Software Engineer",
+      "UCF",
+      "University of Central Florida",
+      "Knight Hacks",
+      "Web Development",
+      "Full Stack",
+      "Hackathon Organizer",
+      "React",
+      "TypeScript",
+  ],
+  openGraph: {
+      type: "website",
+      title: "Daniel Efres",
+      description:
+          "Explore my skills and expertise as a software engineer and undergraduate student at the University of Central Florida.",
+      url: "https://danielefres.dev/skills",
+      images: [{ url: "https://danielefres.dev/" }],
+  },
 };
 
 export default function RootLayout({

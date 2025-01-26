@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         type: "website",
-        title: "Daniel Efres",
+        title: "Daniel Efres | Projects",
         description:
             "Explore my projects as a software engineer and undergraduate student at the University of Central Florida.",
         url: "https://danielefres.dev/experience",
