@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       description:
           "Explore my skills and expertise as a software engineer and undergraduate student at the University of Central Florida.",
       url: "https://danielefres.dev/skills",
-      images: [{ url: "https://danielefres.dev/" }],
+      images: '/images/favicon2.png',
   },
 };
 
