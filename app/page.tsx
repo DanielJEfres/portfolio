@@ -1,5 +1,5 @@
-import Typewriters from './components/typewriter' 
-import SocialLinks from './components/socialsbuttons'
+import Typewriters from './components/typewriter';
+import SocialLinks from './components/socialsbuttons';
 
 export default function Home() {
     return (
@@ -8,10 +8,10 @@ export default function Home() {
                 <h1 className="text-[#23282e] flex justify-center items-center text-[25px] md:text-[30px] lg:text-[35px] font-mono mt-3">
                     hey! my name is
                 </h1>
-                <h1 className="bg-gradient-to-r from-red-600 to-red-900 bg-clip-text flex  justify-center items-center text-[30px] md:text-[45px] lg:text-[55px] font-mono">
+                <h1 className="bg-gradient-to-r from-red-600 to-red-900 bg-clip-text flex justify-center items-center text-[30px] md:text-[45px] lg:text-[55px] font-mono">
                     <Typewriters />
                 </h1>
-                <h1 className="text-[#23282e] flex  justify-center items-center text-[25px] md:text-[30px] lg:text-[35px] font-mono">
+                <h1 className="text-[#23282e] flex justify-center items-center text-[25px] md:text-[30px] lg:text-[35px] font-mono">
                     welcome to my website!
                 </h1>
                 

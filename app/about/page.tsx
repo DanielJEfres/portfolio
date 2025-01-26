@@ -21,10 +21,11 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         type: "website",
-        title: "Daniel Efres | About",
+        title: "Daniel Efres",
         description:
             "Explore my skills and expertise as a software engineer and undergraduate student at the University of Central Florida.",
         url: "https://danielefres.dev/skills",
+        images: [{ url: "https://danielefres.dev/" }],
     },
 };
 
