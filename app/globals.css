@@ -33,14 +33,24 @@ body {
 
 @keyframes moveCableCar {
   0% {
-    top: -10px; /* Start at the top */
+    top: -15px;
+  }
+  25% {
+    top: 50%;
+  }
+  50% {
+    top: 100%;
+  }
+  75% {
+    top: 50%;
   }
   100% {
-    top: 100%; /* Move to the bottom */
+    top: -15px;
   }
 }
 
 .animate-cable-car {
-  animation: moveCableCar 10s linear infinite; 
+  animation: moveCableCar 10s linear infinite;
 }
+
 

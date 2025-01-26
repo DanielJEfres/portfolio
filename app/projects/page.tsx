@@ -4,38 +4,39 @@ import ProjectCards from "../components/pcard";
 export default function Projects() {
   const projectData = [
     {
-        title: 'Kmodo',
-        subtitle: 'Jan 2025 - Present',
-        image: '/images/kmodo.png',
-        body: 'A centralized hackathon dashboard that redefines how hackathons are created, organized, and experienced. Kmodo simplifies connectivity, engagement, and visibility for hackers, organizers, and sponsors. Users can explore hackathons via an intuitive calendar, filter events based on preferences, and stay updated with notifications. With dedicated dashboards for hackers, organizers, and sponsors, features include project tracking, sponsorship management, and talent recruitment. Kmodo also offers tools like team matching, role-based access, leaderboards, badges, and learning resources, creating a comprehensive platform for all hackathon needs.',
-        skills: ['React', 'TypeScript', 'TailwindCSS', 'Python', 'tRPC', 'Drizzle', 'PostgreSQL', 'Next.js'],
-        link: 'https://kmodo.org',
-      },
-      {
-        title: 'Portfolio',
-        subtitle: 'Jan 2025 - Present',
-        image: '/images/favicon2.png',
-        body: 'The website you are currently on!',
-        skills: ['React', 'TypeScript', 'TailwindCSS', 'Next.js'],
-        link: '/',
-      },
+      title: 'Kmodo',
+      subtitle: 'Jan 2025 - Present',
+      image: '/images/kmodo.png',
+      body: 'Kmodo is a centralized hackathon dashboard designed to simplify the creation, organization, and experience of hackathons. It connects hackers, organizers, and sponsors through an intuitive platform that features project tracking, sponsorship management, team matching, and role-based access.',
+      skills: ['React', 'TypeScript', 'TailwindCSS', 'Python', 'tRPC', 'Drizzle', 'PostgreSQL', 'Next.js'],
+      link: 'https://kmodo.org',
+    },
+    {
+      title: 'Portfolio Site',
+      subtitle: 'Jan 2025 - Present',
+      image: '/images/favicon2.png',
+      body: 'The website you are currently on! This site serves as my personal portfolio, showcasing my projects, skills, and experiences. It highlights the technologies I use and my approach to creating impactful solutions, along with some related experiences I have been a part of. Feel free to explore and learn more about me!',
+      skills: ['React', 'TypeScript', 'TailwindCSS', 'Next.js'],
+      link: '/',
+    },
     {
       title: 'Spark-A-Hack',
       subtitle: 'Sep 2024 - Nov 2024',
       image: '/images/spark-a-hack.png',
-      body: 'An innovative tool that uses the Gemini API to generate creative and impactful hackathon project ideas based off all previous 30,000+ winning hackathon projects on DevPost. It simplifies the brainstorming process for teams, helping them focus on building winning solutions with ease.',
+      body: 'Spark-A-Hack uses the Gemini API to generate innovative hackathon project ideas based on over 30,000 winning projects from DevPost. It helps teams brainstorm by providing unique project ideas to kickstart their hackathon experience, simplifying the ideation process and improving focus on building successful solutions.',
       skills: ['React', 'TypeScript', 'TailwindCSS', 'Python', 'Gemini API', 'Next.js'],
       link: 'https://github.com/cataladev/spark-a-hack',
     },
     {
-        title: 'HackTracker',
-        subtitle: 'Sep 2024 - Nov 2024',
-        image: '/images/hack-tracker.png',
-        body: 'A platform that helps users discover personalized hackathon opportunities by leveraging information from MLH\'s website. It streamlines the process of finding relevant events based on location and education, enabling users to focus on participating and innovating at the right hackathons.',
-        skills: ['React', 'TypeScript', 'TailwindCSS', 'Python', 'Next.js'],
-        link: 'https://github.com/cataladev/hacktracker',
-      },
+      title: 'HackTracker',
+      subtitle: 'Sep 2024 - Nov 2024',
+      image: '/images/hack-tracker.png',
+      body: 'HackTracker is a platform that helps users find personalized hackathon opportunities by leveraging data from MLH’s website. It tailors event recommendations based on user location and education, allowing participants to focus on engaging in the right events and innovating their solutions.',
+      skills: ['React', 'TypeScript', 'TailwindCSS', 'Python', 'Next.js'],
+      link: 'https://github.com/cataladev/hacktracker',
+    },
   ];
+  
 
   return (
     <div className="mt-8 md:mt-32 md:mb-32">
