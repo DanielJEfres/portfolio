@@ -25,7 +25,7 @@ const experiences = [
     image: '/images/sfmhr.jpg',
     textColor: 'text-[#18cc45]', 
     borderColor: 'border-green-400', 
-    hoverBorderColor: 'hover:border-blue    -300', 
+    hoverBorderColor: 'hover:border-blue-300', 
     hoverTextColor: 'hover:text-[#18cc45]', 
   },
 ];

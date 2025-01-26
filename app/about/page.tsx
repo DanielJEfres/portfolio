@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import FadeInWhenVisible from '../components/visiblefade';
 
 export default function AboutMe() {
     const Languages = [
@@ -57,13 +56,15 @@ export default function AboutMe() {
                 Skills
             </h1>
 
-            <FadeInWhenVisible direction="left">
+            
             <div className="flex flex-wrap justify-center gap-8">
                 <h2 className="text-[#23282e] text-2xl font-mono w-full text-center mb-4">
                     Programming Languages
                 </h2>
-                {Languages.map((lang) => (
-                    <div key={lang.name} className="group relative border-2 border-[#6a6b6d] shadow-md rounded-lg flex justify-center items-center hover:scale-125 transform transition-all duration-300">
+                {Languages.map((lang, index) => (
+                    <div key={lang.name} className="group relative border-2 border-[#6a6b6d] shadow-md rounded-lg flex justify-center items-center hover:scale-125 transform transition-all duration-300 animate-fade-right" style={{
+                        animationDelay: `${index * 200 + 500}ms`,
+                    }}>
                         <Image src={lang.icon} alt={lang.name} width={70} height={70} className="m-2" />
                         <span className="absolute bottom-0 left-0 right-0 bg-[#23282e] text-[#F3F4F6] text-xs font-mono text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-1">
                             {lang.name}
@@ -71,15 +72,17 @@ export default function AboutMe() {
                     </div>
                 ))}
             </div>
-            </FadeInWhenVisible>
+           
             
-            <FadeInWhenVisible direction="right">
+           
             <div className="flex flex-wrap justify-center gap-8 py-8">
                 <h2 className="text-[#23282e] text-2xl font-mono w-full text-center mb-4">
                     Frameworks/Libraries
                 </h2>
-                {Frameworks.map((framework) => (
-                    <div key={framework.name} className="group relative border-2 border-[#6a6b6d] shadow-lg rounded-md flex justify-center items-center hover:scale-125 transform transition-all duration-300">
+                {Frameworks.map((framework, index) => (
+                    <div key={framework.name} className="group relative border-2 border-[#6a6b6d] shadow-lg rounded-md flex justify-center items-center hover:scale-125 transform transition-all duration-300 animate-fade-right" style={{
+                        animationDelay: `${index * 200 + 500}ms`,
+                    }}>
                         <Image src={framework.icon} alt={framework.name} width={70} height={70} className="m-2" />
                         <span className="absolute bottom-0 left-0 right-0 bg-[#23282e] text-[#F3F4F6] text-xs font-mono text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-1">
                             {framework.name}
@@ -87,15 +90,17 @@ export default function AboutMe() {
                     </div>
                 ))}
             </div>
-            </FadeInWhenVisible>
+           
             
-            <FadeInWhenVisible direction="left">
+            
             <div className="flex flex-wrap justify-center gap-8 mb-16">
                 <h2 className="text-[#23282e] text-2xl font-mono w-full text-center mb-4">
                     Developer Tools
                 </h2>
-                {Tools.map((tool) => (
-                    <div key={tool.name} className="group relative border-2 border-[#6a6b6d] shadow-lg rounded-md flex justify-center items-center hover:scale-125 duration-300">
+                {Tools.map((tool, index) => (
+                    <div key={tool.name} className="group relative border-2 border-[#6a6b6d] shadow-lg rounded-md flex justify-center items-center hover:scale-125 duration-300 animate-fade-right" style={{
+                        animationDelay: `${index * 200 + 500}ms`,
+                    }}>
                         <Image src={tool.icon} alt={tool.name} width={70} height={70} className="m-2" />
                         <span className="absolute bottom-0 left-0 right-0 bg-[#23282e] text-[#F3F4F6] text-xs font-mono text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-1">
                             {tool.name}
@@ -103,7 +108,7 @@ export default function AboutMe() {
                     </div>
                 ))}
             </div>
-            </FadeInWhenVisible>
+            
     
             <div className="pb-16" />
         </div>

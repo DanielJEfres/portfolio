@@ -14,7 +14,7 @@ export default function Projects() {
       {
         title: 'Portfolio',
         subtitle: 'Jan 2025 - Present',
-        image: '/images/person.svg',
+        image: '/images/favicon2.png',
         body: 'The website you are currently on!',
         skills: ['React', 'TypeScript', 'TailwindCSS', 'Next.js'],
         link: '/',
