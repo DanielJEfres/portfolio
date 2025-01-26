@@ -1,5 +1,32 @@
 import ProjectCards from "../components/pcard";
 
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+    title: "Daniel Efres | Projects",
+    description:
+        "Daniel Efres is an undergraduate student at the University of Central Florida and an aspiring software engineer.",
+    keywords: [
+        "Daniel Efres",
+        "Software Engineer",
+        "UCF",
+        "University of Central Florida",
+        "Knight Hacks",
+        "Web Development",
+        "Full Stack",
+        "Hackathon Organizer",
+        "React",
+        "TypeScript",
+    ],
+    openGraph: {
+        type: "website",
+        title: "Daniel Efres | Projects",
+        description:
+            "Explore my projects as a software engineer and undergraduate student at the University of Central Florida.",
+        url: "https://danielefres.dev/experience",
+    },
+};
 
 export default function Projects() {
   const projectData = [

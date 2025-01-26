@@ -1,5 +1,32 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+    title: "Daniel Efres | Skills",
+    description:
+        "Daniel Efres is an undergraduate student at the University of Central Florida and an aspiring software engineer.",
+    keywords: [
+        "Daniel Efres",
+        "Software Engineer",
+        "UCF",
+        "University of Central Florida",
+        "Knight Hacks",
+        "Web Development",
+        "Full Stack",
+        "Hackathon Organizer",
+        "React",
+        "TypeScript",
+    ],
+    openGraph: {
+        type: "website",
+        title: "Daniel Efres | About",
+        description:
+            "Explore my skills and expertise as a software engineer and undergraduate student at the University of Central Florida.",
+        url: "https://danielefres.dev/skills",
+    },
+};
 
 export default function AboutMe() {
     const Languages = [
