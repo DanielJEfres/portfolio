@@ -59,7 +59,6 @@ export default function AboutMe() {
         { name: 'Node.js', icon:'/images/node.svg'  },
         { name: 'VSCode', icon:'/images/vscode.svg'  },
         { name: 'Vercel', icon:'/images/vercel.svg'  },
-        { name: 'PyCharm', icon:'/images/pycharm.svg'  },
         { name: 'Blender', icon:'/images/blender.svg'  },
         { name: 'OnShape', icon:'/images/onshape.svg'  },
     ];
