@@ -22,7 +22,7 @@ export default function ExperienceCards({ experiences }: CardsProps) {
   return (
     <div className="flex flex-col items-center justify-center px-4 md:px-8">
       <div className="relative w-full max-w-5xl">
-        <div className="absolute left-1/2 top-0 h-screen w-[1px] bg-[#23282e] transform -translate-x-1/2 hidden sm:block">
+        <div className="absolute left-1/2 top-0 h-full w-[1px] bg-[#23282e] transform -translate-x-1/2 hidden sm:block">
           <div className="absolute animate-cable-car">
             <CableCar size={35} color="black" className="transform -translate-x-1/2" />
           </div>

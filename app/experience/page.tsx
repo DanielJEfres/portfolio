@@ -32,16 +32,30 @@ export const metadata: Metadata = {
 
 
 const experiences = [
+    
+    {
+      title: "Secretary",
+      company: "Knight Hacks",
+      date: "Feb 2025 - Present",
+      location: "Orlando, FL",
+      description:
+        "Coordinating event logistics and securing spaces for Knight Hacks VIII, ensuring smooth operations for hackathons, workshops, and meetings. Managed access credentials for 60+ members and led onboarding initiatives, enabling seamless integration. I worked closely with the UCF Registrar to ensure event space availability and supported internal communications, fostering an efficient and collaborative environment within the organization.",
+      image: '/images/knighthacks.jpg',
+      textColor: 'text-[#5f0849]', 
+      borderColor: 'border-purple-700',
+      hoverBorderColor: 'hover:border-black',
+      hoverTextColor: 'hover:text-[#a10f7d]',
+    },
     {
       title: "Hackathon Organizer",
       company: "Knight Hacks",
-      date: "Dec 2024 - Present",
+      date: "Dec 2024 - Feb 2025",
       location: "Orlando, FL",
       description:
         "Leading the efforts to secure sponsorships and cultivate long-term relationships with corporate partners, ensuring the success of Knight Hacks VIII. Oversaw event logistics, participant outreach, and the execution of workshops, activities, and ceremonies, engaging 700+ attendees in impactful experiences. I focus on analyzing post-event metrics such as participant satisfaction to continually improve future events.",
       image: '/images/knighthacks.jpg',
       textColor: 'text-[#a10f7d]', 
-      borderColor: 'border-purple-700',
+      borderColor: 'border-purple-400',
       hoverBorderColor: 'hover:border-black',
       hoverTextColor: 'hover:text-[#a10f7d]',
     },
