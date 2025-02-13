@@ -20,6 +20,7 @@ const config: Config = {
       },
       backgroundImage: {
         bannerImg: "url('/images/mountainpic.jpg')", 
+        bannerImg2: "url('/images/mountainpic2.jpg')",
       },
       keyframes: {
         fadeIn: {
