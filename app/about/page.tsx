@@ -32,32 +32,38 @@ export const metadata: Metadata = {
 export default function AboutMe() {
     const Languages = [
         { name: 'Python', icon:'/images/python.svg' }, 
+        { name: 'HTML', icon:'/images/html.svg'  },
+        { name: 'CSS', icon:'/images/css.svg'  },
+        { name: 'Javascript', icon:'/images/javascript.svg'  },
+        { name: 'Typescript', icon:'/images/typescript.svg'  },
         { name: 'C', icon:'/images/c.svg'  },
         { name: 'C++', icon:'/images/cpp.svg'  },
         { name: 'Java', icon:'/images/java.svg'  },
-        { name: 'Javascript', icon:'/images/javascript.svg'  },
-        { name: 'Typescript', icon:'/images/typescript.svg'  },
-        { name: 'HTML', icon:'/images/html.svg'  },
-        { name: 'CSS', icon:'/images/css.svg'  },
+
+
     ];
 
     const Frameworks = [
         { name: 'React', icon:'/images/react.svg'  },
         { name: 'Angular', icon:'/images/angularicon.svg'  },
-        { name: 'Tailwind CSS', icon:'/images/tailwind.svg'  },
-        { name: 'Prisma', icon:'/images/prisma.svg'  },
-        { name: 'tRPC', icon:'/images/trpc.svg' },
+        { name: 'Django', icon:'/images/django.svg'  },
         { name: 'Drizzle', icon:'/images/drizzle.jpg'  },
+        { name: 'Tailwind CSS', icon:'/images/tailwind.svg'  },
+        { name: 'tRPC', icon:'/images/trpc.svg' },
+        { name: 'Prisma', icon:'/images/prisma.svg'  },
+        { name: 'Next.js', icon:'/images/next.svg'  },
+        { name: 'Node.js', icon:'/images/node.svg'  },
         { name: 'Tkinter', icon:'/images/tkinter.svg'  },
         { name: 'Pygame', icon:'/images/pygame.svg'  },
+        { name: 'PostgreSQL', icon:'/images/postgresql.svg'  },
         { name: 'SQLite', icon:'/images/sqlite.svg'  },
     ];
 
     const Tools = [
         { name: 'Git', icon:'/images/git.svg'  },
         { name: 'GitHub', icon:'/images/github.svg'  },
-        { name: 'Next.js', icon:'/images/next.svg'  },
-        { name: 'Node.js', icon:'/images/node.svg'  },
+        { name: 'Figma', icon:'/images/figma.svg'  },
+        { name: 'Docker', icon:'/images/docker.svg'  },
         { name: 'VSCode', icon:'/images/vscode.svg'  },
         { name: 'Vercel', icon:'/images/vercel.svg'  },
         { name: 'Blender', icon:'/images/blender.svg'  },

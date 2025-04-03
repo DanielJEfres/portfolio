@@ -32,31 +32,43 @@ export const metadata: Metadata = {
 
 
 const experiences = [
-    
+    {
+      title: "Incoming Software Engineer Intern",
+      company: "BNY",
+      date: "May 2025 - August 2025",
+      location: "Lake Mary, FL",
+      description:
+        "Joining BNY as a Software Engineer Intern, where I will contribute to the development and optimization of financial applications. My focus will be on enhancing system efficiency, implementing scalable solutions, and collaborating with cross-functional teams to drive innovation in banking technology.",
+      image: '/images/bnylogo2.jpg',
+      textColor: 'text-[#04243b]', 
+      borderColor: 'border-teal-600',
+      hoverBorderColor: 'hover:border-teal-400',
+      hoverTextColor: 'hover:text-[#33bdf3]',
+    },
+    {
+      title: "Software Engineer",
+      company: "CDL Techrangers",
+      date: "March 2025 - Present",
+      location: "Orlando, FL",
+      description:
+      "Developing web applications supporting 60,000+ students and faculty using React, Django, and Flask. Contributing to the Intelligent Course Search LTI by integrating normal and vector PostgreSQL databases, and OpenAI's GPT API to create a retrieval-augmented chatbot in Canvas LMS, enabling AI-driven course material assistance.",
+      image: '/images/cdltechrangers2.png',
+      textColor: 'text-[#3c2ccecc]', 
+      borderColor: 'border-blue-300',
+      hoverBorderColor: 'hover:border-blue-200',
+      hoverTextColor: 'hover:text-[#33bdf3]',
+    },
     {
       title: "Secretary",
       company: "Knight Hacks",
-      date: "Feb 2025 - Present",
+      date: "January 2025 - Present",
       location: "Orlando, FL",
       description:
         "Coordinating event logistics and securing spaces for Knight Hacks VIII, ensuring smooth operations for hackathons, workshops, and meetings. Managed access credentials for 60+ members and led onboarding initiatives, enabling seamless integration. I worked closely with the UCF Registrar to ensure event space availability and supported internal communications, fostering an efficient and collaborative environment within the organization.",
       image: '/images/knighthacks.jpg',
       textColor: 'text-[#5f0849]', 
       borderColor: 'border-purple-700',
-      hoverBorderColor: 'hover:border-black',
-      hoverTextColor: 'hover:text-[#a10f7d]',
-    },
-    {
-      title: "Hackathon Organizer",
-      company: "Knight Hacks",
-      date: "Dec 2024 - Feb 2025",
-      location: "Orlando, FL",
-      description:
-        "Leading the efforts to secure sponsorships and cultivate long-term relationships with corporate partners, ensuring the success of Knight Hacks VIII. Oversaw event logistics, participant outreach, and the execution of workshops, activities, and ceremonies, engaging 700+ attendees in impactful experiences. I focus on analyzing post-event metrics such as participant satisfaction to continually improve future events.",
-      image: '/images/knighthacks.jpg',
-      textColor: 'text-[#a10f7d]', 
-      borderColor: 'border-purple-400',
-      hoverBorderColor: 'hover:border-black',
+      hoverBorderColor: 'hover:border-purple-300',
       hoverTextColor: 'hover:text-[#a10f7d]',
     },
     {
@@ -69,7 +81,7 @@ const experiences = [
       image: '/images/sfmhr.jpg',
       textColor: 'text-[#18cc45]', 
       borderColor: 'border-green-400', 
-      hoverBorderColor: 'hover:border-purple-700', 
+      hoverBorderColor: 'hover:border-green-300', 
       hoverTextColor: 'hover:text-[#18cc45]',
     },
   ];
