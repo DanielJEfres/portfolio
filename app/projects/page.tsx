@@ -32,6 +32,14 @@ export const metadata: Metadata = {
 export default function Projects() {
   const projectData = [
     {
+      title: 'SightSync',
+      subtitle: 'Apr 2025 - Present',
+      image: '/images/sightsynclogo.png',
+      body: 'SightSync is a hands-free accessibility tool that lets users control their computer using head movements and voice commands. Designed for individuals with limited mobility, it combines real-time webcam tracking and natural speech recognition to enable full OS-level interaction without the need for physical input devices.',
+      skills: ['Python','OpenCV', 'Mediapipe', 'Pyautogui', 'Pygame'],
+      link: 'https://github.com/cataladev/SightSync',
+    },
+    {
       title: 'Kmodo',
       subtitle: 'Jan 2025 - Present',
       image: '/images/kmodo.png',
@@ -41,7 +49,7 @@ export default function Projects() {
     },
     {
       title: 'Portfolio Site',
-      subtitle: 'Jan 2025 - Present',
+      subtitle: 'Jan 2025 - Feb 2025',
       image: '/images/favicon2.png',
       body: 'The website you are currently on! This site serves as my personal portfolio, showcasing my projects, skills, and experiences. It highlights the technologies I use and my approach to creating impactful solutions, along with some related experiences I have been a part of. Feel free to explore and learn more about me!',
       skills: ['React', 'TypeScript', 'TailwindCSS', 'Next.js'],
