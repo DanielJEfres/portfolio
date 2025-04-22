@@ -16,26 +16,28 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Daniel Efres",
   description:
-      "Daniel Efres is an undergraduate student at the University of Central Florida and an aspiring software engineer.",
+    "Daniel Efres is an undergraduate student at the University of Central Florida and an aspiring software engineer.",
   keywords: [
-      "Daniel Efres",
-      "Software Engineer",
-      "UCF",
-      "University of Central Florida",
-      "Knight Hacks",
-      "Web Development",
-      "Full Stack",
-      "Hackathon Organizer",
-      "React",
-      "TypeScript",
+    "Daniel Efres",
+    "Software Engineer",
+    "UCF",
+    "University of Central Florida",
+    "Knight Hacks",
+    "Hackathon Organizer",
+    "Full Stack Developer",
+    "Web Development",
+    "React",
+    "TypeScript",
+    "Next.js",
+    "Open Source",
   ],
   openGraph: {
-      type: "website",
-      title: "Daniel Efres",
-      description:
-          "Explore my skills and expertise as a software engineer and undergraduate student at the University of Central Florida.",
-      url: "https://danielefres.dev/skills",
-      images: '/images/favicon2.png',
+    type: "website",
+    title: "Daniel Efres",
+    description:
+      "Daniel Efres is a software engineer and Computer Science student at UCF. He builds full-stack web apps, organizes hackathons, and creates accessible tools for creative communities.",
+    url: "https://danielefres.dev",
+    images: [{ url: "https://danielefres.dev/images/favicon4.png" }]
   },
 };
 

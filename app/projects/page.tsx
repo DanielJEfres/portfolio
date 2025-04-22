@@ -4,33 +4,45 @@ import { Metadata } from 'next';
 
 
 export const metadata: Metadata = {
-    title: "Daniel Efres | Projects",
-    description:
-        "Daniel Efres is an undergraduate student at the University of Central Florida and an aspiring software engineer.",
-    keywords: [
-        "Daniel Efres",
-        "Software Engineer",
-        "UCF",
-        "University of Central Florida",
-        "Knight Hacks",
-        "Web Development",
-        "Full Stack",
-        "Hackathon Organizer",
-        "React",
-        "TypeScript",
+  title: "Daniel Efres",
+  description:
+    "Daniel Efres is an undergraduate student at the University of Central Florida and an aspiring software engineer.",
+  keywords: [
+    "Daniel Efres",
+    "Software Engineer",
+    "UCF",
+    "University of Central Florida",
+    "Knight Hacks",
+    "Hackathon Organizer",
+    "Full Stack Developer",
+    "Web Development",
+    "React",
+    "TypeScript",
+    "Next.js",
+    "Open Source",
     ],
     openGraph: {
         type: "website",
         title: "Daniel Efres | Projects",
         description:
-            "Explore my projects as a software engineer and undergraduate student at the University of Central Florida.",
-        url: "https://danielefres.dev/experience",
-        images: '/images/favicon2.png',
+          "Daniel Efres is a software engineer and Computer Science student at UCF. He builds full-stack web apps, organizes hackathons, and creates accessible tools for creative communities.",
+        url: "https://danielefres.dev/projects",
+        images: [{ url: "https://danielefres.dev/images/favicon4.png" }]
     },
 };
 
+
+
 export default function Projects() {
   const projectData = [
+    {
+      title: 'Riffs',
+      subtitle: 'Apr 2025 - Present',
+      image: '/images/riffs.png',
+      body: 'Riffs is a browser-based music tool that converts hummed melodies into editable guitar tabs. It uses real-time pitch detection to generate playable notes, maps them to guitar fret positions, and displays them on a custom piano roll editor—all without needing plugins or MIDI gear.',
+      skills: ['TypeScript', 'React', 'TailwindCSS', 'Next.js', 'Pitchy', 'FL Studio'],
+      link: 'https://riffs-three.vercel.app/',
+    },
     {
       title: 'SightSync',
       subtitle: 'Apr 2025 - Present',
@@ -46,14 +58,6 @@ export default function Projects() {
       body: 'Kmodo is a centralized hackathon dashboard designed to simplify the creation, organization, and experience of hackathons. It connects hackers, organizers, and sponsors through an intuitive platform that features project tracking, sponsorship management, team matching, and role-based access.',
       skills: ['React', 'TypeScript', 'TailwindCSS', 'Python', 'tRPC', 'Drizzle', 'PostgreSQL', 'Next.js'],
       link: 'https://kmodo.org',
-    },
-    {
-      title: 'Portfolio Site',
-      subtitle: 'Jan 2025 - Feb 2025',
-      image: '/images/favicon2.png',
-      body: 'The website you are currently on! This site serves as my personal portfolio, showcasing my projects, skills, and experiences. It highlights the technologies I use and my approach to creating impactful solutions, along with some related experiences I have been a part of. Feel free to explore and learn more about me!',
-      skills: ['React', 'TypeScript', 'TailwindCSS', 'Next.js'],
-      link: '/',
     },
     {
       title: 'Spark-A-Hack',
