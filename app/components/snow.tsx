@@ -11,7 +11,7 @@ export default function Snow() {
         let w = (canvas.width = window.innerWidth);
         let h = (canvas.height = window.innerHeight);
 
-        let flakes = Array.from({ length: 120 }).map(() => ({
+        const flakes = Array.from({ length: 120 }).map(() => ({
             x: Math.random() * w,
             y: Math.random() * h,
             r: Math.random() * 3 + 1,
@@ -23,7 +23,7 @@ export default function Snow() {
             ctx.clearRect(0, 0, w, h);
             ctx.fillStyle = "white";
             ctx.beginPath();
-            for (let f of flakes) {
+            for (const f of flakes) {
                 ctx.moveTo(f.x, f.y);
                 ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2, true);
             }
@@ -35,7 +35,7 @@ export default function Snow() {
         function moveSnow() {
             angle += 0.01;
             for (let i = 0; i < flakes.length; i++) {
-                let f = flakes[i];
+                const f = flakes[i];
                 f.y += Math.pow(f.d, 2) + 1;
                 f.x += Math.sin(angle) * 0.5;
 

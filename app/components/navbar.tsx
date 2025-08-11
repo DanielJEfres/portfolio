@@ -31,7 +31,7 @@ const Navigationbar = () => {
       <div className="flex items-center justify-center md:justify-start gap-8">
         {nav
           .filter((item) => item.name === 'Home')
-          .map((item, index) => (
+          .map((item) => (
             <Link href={item.path} key={item.name} className="group">
               <div
                 className={`frost-ice cracked px-3 md:px-4 py-1 flex items-center gap-1 md:gap-2
@@ -56,7 +56,7 @@ const Navigationbar = () => {
       <div className="flex items-center justify-center md:justify-end gap-8 md:gap-3">
         {nav
           .filter((item) => item.name !== 'Home')
-          .map((item, index) => (
+          .map((item) => (
             <Link href={item.path} key={item.name} className="group">
               <div
                 className={`frost-ice cracked px-4 py-1 flex items-center gap-1 md:gap-2
