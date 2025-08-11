@@ -53,4 +53,77 @@ body {
   animation: moveCableCar 17s linear infinite;
 }
 
+.frost-ice {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.08); 
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.4s ease;
+}
+
+.frost-ice::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.frost-ice::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 30%,
+    rgba(173, 216, 230, 0.4) 50%,
+    transparent 70%
+  );
+  transform: skewX(-20deg);
+  animation: frostShimmer 3s infinite ease-in-out;
+  animation-delay: var(--shimmer-delay, 0s);
+  z-index: 1;
+}
+
+@keyframes frostShimmer {
+  0% { left: -150%; }
+  100% { left: 150%; }
+}
+
+.frost-ice:hover {
+  background: rgba(173, 216, 230, 0.15);
+  box-shadow:
+    inset 0 0 15px rgba(255, 255, 255, 0.4),
+    inset 0 0 25px rgba(173, 216, 230, 0.5),
+    0 0 15px rgba(173, 216, 230, 0.4);
+  transform: scale(1.05);
+}
+
+.frost-ice.cracked {
+  background-image: url('/textures/cracks.png');
+  background-size: cover;
+  background-blend-mode: overlay;
+  opacity: 0.8;
+}
+
+.nav-active {
+  background: rgba(59, 130, 246, 0.8) !important;
+  color: #1e293b !important;
+  box-shadow:
+    inset 0 0 15px rgba(255, 255, 255, 0.6),
+    0 0 20px rgba(59, 130, 246, 0.7);
+  animation: none !important;
+}
+
+.nav-active::after {
+  content: none !important;
+}
 
