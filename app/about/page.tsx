@@ -4,59 +4,74 @@ import { Metadata } from 'next';
 
 
 export const metadata: Metadata = {
-    title: "Daniel Efres",
-    description:
-      "Daniel Efres is an undergraduate student at the University of Central Florida and an aspiring software engineer.",
-    keywords: [
-      "Daniel Efres",
-      "Software Engineer",
-      "UCF",
-      "University of Central Florida",
-      "Knight Hacks",
-      "Hackathon Organizer",
-      "Full Stack Developer",
-      "Web Development",
-      "React",
-      "TypeScript",
-      "Next.js",
-      "Open Source",
-    ],
-    openGraph: {
-        type: "website",
-        title: "Daniel Efres | Skills",
+        title: { default: 'About — Daniel Efres', template: '%s | Daniel Efres' },
         description:
-            "Daniel Efres is a software engineer and Computer Science student at UCF. He builds full-stack web apps, organizes hackathons, and creates accessible tools for creative communities.",
-        url: "https://danielefres.dev/about",
-        images: [{ url: "https://danielefres.dev/images/favicon4.png" }]
-    },
+            'About Daniel Jose Efres — skills, tools and technologies used across web, desktop and research projects.',
+        keywords: [
+            'Daniel Efres',
+            'Skills',
+            'Programming Languages',
+            'Frameworks',
+            'Developer Tools',
+            'Full Stack',
+        ],
+        authors: [{ name: 'Daniel Jose Efres', url: 'https://danielefres.dev' }],
+        openGraph: {
+                type: 'website',
+                title: 'Daniel Efres | Skills',
+                description:
+                        'Daniel Efres is a software engineer and Computer Science student at UCF. He builds full-stack web apps and tools.',
+                url: 'https://danielefres.dev/about',
+                images: [{ url: 'https://danielefres.dev/images/daniel.png', width: 1200, height: 630 }]
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: 'Daniel Efres | Skills',
+            description: 'Skills and tools used by Daniel Jose Efres — full-stack web and research projects.',
+            images: ['https://danielefres.dev/images/daniel.png'],
+            creator: '@DanielJEfres'
+        },
+        metadataBase: new URL('https://danielefres.dev')
 };
 
 
 export default function AboutMe() {
     const Languages = [
         { name: 'Python', icon:'/images/python.svg' }, 
-        { name: 'HTML', icon:'/images/html.svg'  },
-        { name: 'CSS', icon:'/images/css.svg'  },
-        { name: 'Javascript', icon:'/images/javascript.svg'  },
-        { name: 'Typescript', icon:'/images/typescript.svg'  },
+        { name: 'Java', icon:'/images/java.svg'  },
         { name: 'C', icon:'/images/c.svg'  },
         { name: 'C++', icon:'/images/cpp.svg'  },
-        { name: 'Java', icon:'/images/java.svg'  },
+        { name: 'C#', icon:'/images/csharp.svg'  },
+        { name: 'Kotlin', icon:'/images/Kotlin.svg'  },
+        { name: 'SQL', icon:'/images/sql.svg'  },
+        { name: 'Javascript', icon:'/images/javascript.svg'  },
+        { name: 'Typescript', icon:'/images/typescript.svg'  },
+        { name: 'HTML', icon:'/images/html.svg'  },
+        { name: 'CSS', icon:'/images/css.svg'  },
     ];
 
     const Frameworks = [
         { name: 'React', icon:'/images/react.svg'  },
+        { name: 'Next.js', icon:'/images/next.svg'  },
         { name: 'Angular', icon:'/images/angularicon.svg'  },
         { name: 'Django', icon:'/images/django.svg'  },
-        { name: 'OpenCV', icon:'/images/opencv.svg'  },
-        { name: 'Drizzle', icon:'/images/drizzle.jpg'  },
-        { name: 'Tailwind CSS', icon:'/images/tailwind.svg'  },
-        { name: 'tRPC', icon:'/images/trpc.svg' },
-        { name: 'Prisma', icon:'/images/prisma.svg'  },
-        { name: 'Next.js', icon:'/images/next.svg'  },
+        { name: 'Flask', icon:'/images/flask.svg'  },
+        { name: 'FastAPI', icon:'/images/fastapi.svg'  },
+        { name: 'Spring/SpringBoot', icon:'/images/spring.svg'  },
+        { name: 'Express.js', icon:'/images/Express.svg'  },
         { name: 'Node.js', icon:'/images/node.svg'  },
         { name: 'Tkinter', icon:'/images/tkinter.svg'  },
         { name: 'Pygame', icon:'/images/pygame.svg'  },
+        { name: 'OpenCV', icon:'/images/opencv.svg'  },
+        { name: 'numpy', icon:'/images/NumPy.svg'  },
+        { name: 'PyTorch', icon:'/images/PyTorch.svg'  },
+        { name: 'AWS Bedrock', icon:'/images/awsbedrock.svg'  },
+        { name: 'Drizzle', icon:'/images/drizzle.jpg'  },
+        { name: 'Prisma', icon:'/images/prisma.svg'  },
+        { name: 'tRPC', icon:'/images/trpc.svg' },
+        { name: 'Tailwind CSS', icon:'/images/tailwind.svg'  },
+        { name: 'Ollama', icon:'/images/ollama.svg'  },
+        { name: 'Android Studio', icon:'/images/androidstudio.svg'  },
     ];
 
     const Tools = [
@@ -70,11 +85,21 @@ export default function AboutMe() {
         { name: 'Vercel', icon:'/images/vercel.svg'  },
         { name: 'Blender', icon:'/images/blender.svg'  },
         { name: 'OnShape', icon:'/images/onshape.svg'  },
+        { name: 'Kubernetes', icon:'/images/kubernetes.svg'  },
+        { name: 'AWS', icon:'/images/aws.svg'  },
+        { name: 'Coolify', icon:'/images/coolify.svg'  },
+        { name: 'npm', icon:'/images/npm.svg'  },
+        { name: 'Bun', icon:'/images/bun.svg'  },
+        { name: 'Node.js', icon:'/images/node.svg'  },
+        { name: 'JUnit', icon:'/images/junit.svg'  },
+        { name: 'MacOS', icon:'/images/macos.svg'  },
+        { name: 'Linux', icon:'/images/linux.svg'  },
+        { name: 'Windows', icon:'/images/windows.svg'  },
     ];
 
     
     return (
-        <div className="mt-4 md:mt-32 md:mb-32">
+        <div className="mt-4 md:mt-32 md:mb-32 px-2 md:px-24">
             <h1 className="flex mx-auto justify-center text-3xl text-[#23282e] font-mono mb-8 md:mb-24 animate-fade-down duration-1000 underline decoration-blue-400 underline-offset-4 decoration-2">
                 About Me
             </h1>

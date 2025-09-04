@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         description:
           "Daniel Efres is a software engineer and Computer Science student at UCF. He builds full-stack web apps, organizes hackathons, and creates accessible tools for creative communities.",
         url: "https://danielefres.dev/projects",
-        images: [{ url: "https://danielefres.dev/images/favicon4.png" }]
+        images: [{ url: "https://danielefres.dev/images/daniel.png" }]
     },
 };
 

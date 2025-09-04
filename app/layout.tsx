@@ -14,32 +14,64 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Daniel Efres",
+  title: "About | Daniel Efres",
   description:
-    "Daniel Efres is an undergraduate student at the University of Central Florida and an aspiring software engineer.",
+    "Daniel Efres is an undergraduate student at the University of Central Florida who is passionate about software engineering. He's a previous intern at BNY and specializes in full-stack development, machine learning, and more!",
   keywords: [
     "Daniel Efres",
     "Software Engineer",
-    "UCF",
-    "University of Central Florida",
-    "Knight Hacks",
-    "Hackathon Organizer",
-    "Full Stack Developer",
-    "Web Development",
+    "Full Stack",
     "React",
-    "TypeScript",
     "Next.js",
-    "Open Source",
+    "TypeScript",
+    "Python",
+    "Machine Learning",
+    "OpenCV",
+    "Prisma",
+    "Drizzle",
   ],
+  authors: [{ name: "Daniel Jose Efres" }],
+  creator: "Daniel Jose Efres",
+  publisher: "Daniel Jose Efres",
+  icons: {
+    icon: "/favicon4.png",
+    shortcut: "/favicon4.png",
+    apple: "/favicon4.png",
+  },
   openGraph: {
     type: "website",
-    title: "Daniel Efres",
-    description:
-      "Daniel Efres is a software engineer and Computer Science student at UCF. He builds full-stack web apps, organizes hackathons, and creates accessible tools for creative communities.",
+    locale: "en_US",
     url: "https://danielefres.dev",
-    images: [{ url: "https://danielefres.dev/images/favicon4.png" }]
+    title: "About | Daniel Efres",
+    description:
+      "Daniel Efres is an undergraduate student at the University of Central Florida who is passionate about software engineering. He's a previous intern at BNY and specializes in full-stack development, machine learning, and more!",
+    siteName: "Daniel Efres",
+    images: [
+      {
+        url: "/daniel.png",
+        alt: "Daniel Efres — banner",
+      },
+    ],
   },
-};
+  twitter: {
+    card: "summary_large_image",
+    title: "About | Daniel Efres",
+    description:
+      "Daniel Efres is an undergraduate student at the University of Central Florida who is passionate about software engineering. He's a previous intern at BNY and specializes in full-stack development, machine learning, and more!",
+    images: ["/daniel.png"],
+    creator: "@DanielJEfres",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#F3F4F6" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+  ],
+  metadataBase: new URL("https://danielefres.dev"),
+} as Metadata;
 
 export default function RootLayout({
   children,
