@@ -36,12 +36,12 @@ export const metadata: Metadata = {
 
 const experiences = [
     {
-      title: "Incoming Software Engineer Intern",
-      company: "BNY",
+      title: "Software Engineer Intern",
+      company: "BNY Mellon",
       date: "May 2025 - August 2025",
       location: "Lake Mary, FL",
       description:
-        "Joining BNY as a Software Engineer Intern, where I will contribute to the development and optimization of financial applications. My focus will be on enhancing system efficiency, implementing scalable solutions, and collaborating with cross-functional teams to drive innovation in banking technology.",
+        "Built RESTful APIs to streamline financial data processing, achieving an 89.5% improvement in system efficiency. Designed and implemented scalable backend solutions using modern frameworks, and collaborated with cross-functional teams to enhance banking technology innovation.",
       image: '/images/bnylogo2.jpg',
       textColor: 'text-[#04243b]', 
       borderColor: 'border-teal-600',
@@ -54,7 +54,7 @@ const experiences = [
       date: "March 2025 - Present",
       location: "Orlando, FL",
       description:
-      "Developing web applications supporting 60,000+ students and faculty using React, Django, and Flask. Contributing to the Intelligent Course Search LTI by integrating normal and vector PostgreSQL databases, and OpenAI's GPT API to create a retrieval-augmented chatbot in Canvas LMS, enabling AI-driven course material assistance.",
+        "Developed web applications supporting 60,000+ students and faculty using React, Django, and Flask. Integrated PostgreSQL databases and OpenAI's GPT API to create a retrieval-augmented chatbot in Canvas LMS, enabling AI-driven course material assistance.",
       image: '/images/cdltechrangers2.png',
       textColor: 'text-[#3c2ccecc]', 
       borderColor: 'border-blue-300',
@@ -67,14 +67,14 @@ const experiences = [
       date: "January 2025 - Present",
       location: "Orlando, FL",
       description:
-        "Coordinating event logistics and securing spaces for Knight Hacks VIII, ensuring smooth operations for hackathons, workshops, and meetings. Managed access credentials for 60+ members and led onboarding initiatives, enabling seamless integration. I worked closely with the UCF Registrar to ensure event space availability and supported internal communications, fostering an efficient and collaborative environment within the organization.",
+        "Coordinated event logistics and secured spaces for Knight Hacks VIII. Managed access credentials for 60+ members, led onboarding initiatives, and supported internal communications to foster an efficient and collaborative environment.",
       image: '/images/knighthacks.jpg',
       textColor: 'text-[#5f0849]', 
       borderColor: 'border-purple-700',
       hoverBorderColor: 'hover:border-purple-300',
       hoverTextColor: 'hover:text-[#a10f7d]',
     },
-    {
+     {
       title: "Behavioral Health Technician Assistant",
       company: "South Florida Mental Health and Recovery",
       date: "May 2022 - August 2022",
