@@ -21,14 +21,15 @@ export const metadata: Metadata = {
     "Daniel Efres",
     "Software Engineer",
     "Full Stack",
+    "Knight Hacks",
+    "BNY",
+    "UCF",
+    "University of Central Florida",
+    "Computer Science",
     "React",
     "Next.js",
     "TypeScript",
     "Python",
-    "Machine Learning",
-    "OpenCV",
-    "Prisma",
-    "Drizzle",
   ],
   authors: [{ name: "Daniel Jose Efres" }],
   creator: "Daniel Jose Efres",
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://danielefres.dev",
+  url: "https://www.danielefres.dev",
     title: "About | Daniel Efres",
     description:
       "Daniel Efres is an undergraduate student at the University of Central Florida who is passionate about software engineering. He's a previous intern at BNY and specializes in full-stack development, machine learning, and more!",
@@ -70,7 +71,7 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: light)", color: "#F3F4F6" },
     { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
   ],
-  metadataBase: new URL("https://danielefres.dev"),
+  metadataBase: new URL("https://www.danielefres.dev"),
 } as Metadata;
 
 export default function RootLayout({
