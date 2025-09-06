@@ -42,14 +42,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-  url: "https://www.danielefres.dev",
+    url: "https://www.danielefres.dev",
     title: "About | Daniel Efres",
     description:
       "Daniel Efres is an undergraduate student at the University of Central Florida who is passionate about software engineering. He's a previous intern at BNY and specializes in full-stack development, machine learning, and more!",
     siteName: "Daniel Efres",
     images: [
       {
-        url: "/daniel.png",
+        url: "https://www.danielefres.dev/daniel.png",
         alt: "Daniel Efres — banner",
       },
     ],
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     title: "About | Daniel Efres",
     description:
       "Daniel Efres is an undergraduate student at the University of Central Florida who is passionate about software engineering. He's a previous intern at BNY and specializes in full-stack development, machine learning, and more!",
-    images: ["/daniel.png"],
+    images: ["https://www.danielefres.dev/daniel.png"],
     creator: "@DanielJEfres",
   },
   robots: {
