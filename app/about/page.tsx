@@ -103,10 +103,34 @@ export default function AboutMe() {
 
     
     return (
-        <div className="mt-4 md:mt-32 md:mb-32 px-2 md:px-24">
-            <h1 className="flex mx-auto justify-center text-3xl text-[#23282e] font-mono mb-8 md:mb-24 animate-fade-down duration-1000 underline decoration-blue-400 underline-offset-4 decoration-2">
-                About Me
-            </h1>
+        <div className="min-h-screen relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-100 via-slate-200 to-slate-300">
+                <div className="absolute bottom-0 left-0 w-full h-full hidden sm:block">
+                    <div className="absolute bottom-0 left-0 w-full h-1/3 sm:h-2/5 bg-gradient-to-t from-slate-900/95 via-slate-900/95 to-transparent clip-path-mountain-1"></div>
+                    <div className="absolute bottom-0 left-0 w-full h-1/4 sm:h-1/3 bg-gradient-to-t from-slate-800/90 via-slate-900/90 to-transparent clip-path-mountain-2"></div>
+                    <div className="absolute bottom-0 left-0 w-full h-1/5 sm:h-1/4 bg-gradient-to-t from-slate-800/85 via-slate-900/85 to-transparent clip-path-mountain-3"></div>
+                    <div className="absolute bottom-0 left-0 w-full h-1/6 sm:h-1/5 bg-gradient-to-t from-slate-700/80 via-slate-800/80 to-transparent clip-path-mountain-4"></div>
+                    <div className="absolute bottom-0 left-0 w-full h-1/8 sm:h-1/6 bg-gradient-to-t from-slate-600/75 via-slate-700/75 to-transparent clip-path-mountain-5"></div>
+                </div>
+
+                <div className="absolute top-0 right-0 h-full w-1/4 sm:w-1/3 bg-gradient-to-l from-slate-900 via-slate-900 to-transparent clip-path-projects-right-big hidden sm:block"></div>
+                <div className="absolute top-0 right-0 h-full w-1/6 sm:w-1/4 bg-gradient-to-l from-slate-800 via-slate-900 to-transparent clip-path-peak-right-front hidden sm:block"></div>
+
+                <div className="absolute top-0 left-0 h-full w-1/5 sm:w-1/3 bg-gradient-to-r from-slate-900 via-slate-900 to-transparent clip-path-projects-left-big hidden sm:block"></div>
+                <div className="absolute top-0 left-0 h-full w-1/8 sm:w-1/5 bg-gradient-to-r from-slate-800 via-slate-900 to-transparent clip-path-projects-left-medium hidden sm:block"></div>
+               
+            </div>
+
+            <div className="relative z-10">
+                <div className="container mx-auto px-4 py-8 md:py-16">
+            <div className="text-center mb-12 md:mb-20">
+                <div className="inline-block">
+                    <h1 className="text-3xl md:text-4xl pt-10 font-mono bg-gradient-to-r from-slate-800 via-blue-600 to-slate-800 bg-clip-text text-transparent mb-4 animate-fade-down">
+                        About Me
+                    </h1>
+                    <div className="h-1 w-24 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto rounded-full mb-6"></div>
+                </div>
+            </div>
             <div className="flex flex-col md:flex-row items-start justify-between animate-fade-up mx-auto max-w-6xl md:gap-10 px-4 md:px-0 mb-8 md:mb-24">
                 <div className="md:w-2/5 md:mx-4 w-full flex justify-center md:justify-end md: mb-8 duration-1000">
                     <Image className="rounded-md w-full h-auto md:w-200 md:h-200 md:animate-fade-right" src="/images/snowpic1.jpg" alt="Daniel Efres" width={400} height={400} />
@@ -116,9 +140,14 @@ export default function AboutMe() {
                 </p>
             </div>
 
-            <h1 className="flex mx-auto justify-center text-3xl text-[#23282e] font-mono mb-16 md:mb-24 mt-10 animate-fade-up duration-1000 underline decoration-blue-400 underline-offset-4 decoration-2">
-                Skills
-            </h1>
+            <div className="text-center mb-12 md:mb-20">
+                <div className="inline-block">
+                    <h1 className="text-3xl md:text-4xl font-mono bg-gradient-to-r from-slate-800 via-blue-600 to-slate-800 bg-clip-text text-transparent mb-4 animate-fade-up">
+                        Skills
+                    </h1>
+                    <div className="h-1 w-24 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto rounded-full mb-6"></div>
+                </div>
+            </div>
 
             
             <div className="flex flex-wrap justify-center gap-8">
@@ -126,11 +155,11 @@ export default function AboutMe() {
                     Programming Languages
                 </h2>
                 {Languages.map((lang, index) => (
-                    <div key={lang.name} className="group relative border-2 border-[#6a6b6d] shadow-md rounded-lg flex justify-center items-center hover:scale-125 transform transition-all duration-300 animate-fade-right" style={{
+                    <div key={lang.name} className="group relative border-2 border-slate-300 bg-white/90 backdrop-blur-sm shadow-lg rounded-lg flex justify-center items-center hover:scale-125 transform transition-all duration-300 animate-fade-right" style={{
                         animationDelay: `${index * 200 + 500}ms`,
                     }}>
                         <Image src={lang.icon} alt={lang.name} width={70} height={70} className="m-2" />
-                        <span className="absolute bottom-0 left-0 right-0 bg-[#23282e] text-[#F3F4F6] text-xs font-mono text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-1">
+                        <span className="absolute bottom-0 left-0 right-0 bg-slate-800 text-white text-xs font-mono text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-1 rounded-b-lg">
                             {lang.name}
                         </span>
                     </div>
@@ -144,11 +173,11 @@ export default function AboutMe() {
                     Frameworks/Libraries
                 </h2>
                 {Frameworks.map((framework, index) => (
-                    <div key={framework.name} className="group relative border-2 border-[#6a6b6d] shadow-lg rounded-md flex justify-center items-center hover:scale-125 transform transition-all duration-300 animate-fade-right" style={{
+                    <div key={framework.name} className="group relative border-2 border-slate-300 bg-white/90 backdrop-blur-sm shadow-lg rounded-md flex justify-center items-center hover:scale-125 transform transition-all duration-300 animate-fade-right" style={{
                         animationDelay: `${index * 200 + 500}ms`,
                     }}>
                         <Image src={framework.icon} alt={framework.name} width={70} height={70} className="m-2" />
-                        <span className="absolute bottom-0 left-0 right-0 bg-[#23282e] text-[#F3F4F6] text-xs font-mono text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-1">
+                        <span className="absolute bottom-0 left-0 right-0 bg-slate-800 text-white text-xs font-mono text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-1 rounded-b-md">
                             {framework.name}
                         </span>
                     </div>
@@ -162,11 +191,11 @@ export default function AboutMe() {
                     Developer Tools
                 </h2>
                 {Tools.map((tool, index) => (
-                    <div key={tool.name} className="group relative border-2 border-[#6a6b6d] shadow-lg rounded-md flex justify-center items-center hover:scale-125 duration-300 animate-fade-right" style={{
+                    <div key={tool.name} className="group relative border-2 border-slate-300 bg-white/90 backdrop-blur-sm shadow-lg rounded-md flex justify-center items-center hover:scale-125 duration-300 animate-fade-right" style={{
                         animationDelay: `${index * 200 + 500}ms`,
                     }}>
                         <Image src={tool.icon} alt={tool.name} width={70} height={70} className="m-2" />
-                        <span className="absolute bottom-0 left-0 right-0 bg-[#23282e] text-[#F3F4F6] text-xs font-mono text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-1">
+                        <span className="absolute bottom-0 left-0 right-0 bg-slate-800 text-white text-xs font-mono text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-1 rounded-b-md">
                             {tool.name}
                         </span>
                     </div>
@@ -175,6 +204,8 @@ export default function AboutMe() {
             
     
             <div className="pb-16" />
+                </div>
+            </div>
         </div>
     );
     

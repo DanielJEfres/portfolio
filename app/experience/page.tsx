@@ -122,7 +122,7 @@ export default function Experiences() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-slate-100 via-slate-200 to-slate-300">
-        <div className="absolute bottom-0 left-0 w-full h-full">
+        <div className="absolute bottom-0 left-0 w-full h-full hidden sm:block">
           <div className="absolute bottom-0 left-0 w-full h-1/2 sm:h-5/6 bg-gradient-to-t from-slate-900/90 via-slate-900/95 to-transparent clip-path-mountain-1"></div>
           <div className="absolute bottom-0 left-0 w-full h-1/3 sm:h-4/5 bg-gradient-to-t from-slate-800/90 via-slate-900/90 to-transparent clip-path-mountain-2"></div>
           <div className="absolute bottom-0 left-0 w-full h-1/4 sm:h-3/4 bg-gradient-to-t from-slate-800/90 via-slate-900/90 to-transparent clip-path-mountain-3"></div>
@@ -130,11 +130,11 @@ export default function Experiences() {
           <div className="absolute bottom-0 left-0 w-full h-1/6 sm:h-1/2 bg-gradient-to-t from-slate-700/80 via-slate-800/80 to-transparent clip-path-mountain-5"></div>
         </div>
 
-        <div className="absolute top-0 right-0 h-full w-1/3 sm:w-2/3 bg-gradient-to-l from-slate-900 via-slate-900 to-transparent clip-path-peak-right-back"></div>
-        <div className="absolute top-0 right-0 h-full w-1/4 sm:w-1/2 bg-gradient-to-l from-slate-800 via-slate-900 to-transparent clip-path-peak-right-front"></div>
+        <div className="absolute top-0 right-0 h-full w-1/3 sm:w-2/3 bg-gradient-to-l from-slate-900 via-slate-900 to-transparent clip-path-peak-right-back hidden sm:block"></div>
+        <div className="absolute top-0 right-0 h-full w-1/4 sm:w-1/2 bg-gradient-to-l from-slate-800 via-slate-900 to-transparent clip-path-peak-right-front hidden sm:block"></div>
 
-        <div className="absolute top-0 left-0 h-full w-1/3 sm:w-2/3 bg-gradient-to-r from-slate-800 via-slate-900 to-transparent clip-path-peak-left-back"></div>
-        <div className="absolute top-0 left-0 h-full w-1/4 sm:w-1/2 bg-gradient-to-r from-slate-700 via-slate-800 to-transparent clip-path-peak-left-front"></div>
+        <div className="absolute top-0 left-0 h-full w-1/3 sm:w-2/3 bg-gradient-to-r from-slate-800 via-slate-900 to-transparent clip-path-peak-left-back hidden sm:block"></div>
+        <div className="absolute top-0 left-0 h-full w-1/4 sm:w-1/2 bg-gradient-to-r from-slate-700 via-slate-800 to-transparent clip-path-peak-left-front hidden sm:block"></div>
       </div>
 
       <div className="relative z-10">
