@@ -83,15 +83,40 @@ export default function Projects() {
   
 
   return (
-    <div className="mt-8 md:mt-32 md:mb-32">
-      <h1 className="flex mx-auto justify-center text-3xl  text-[#23282e] font-mono mb-8 md:mb-32 animate-fade-down duration-1000 underline decoration-blue-400 underline-offset-4 decoration-2">
-        Projects
-      </h1>
-      
-      <div className="animate-fade-up">
-        <ProjectCards cards={projectData} />
+    <div className="min-h-screen relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-100 via-slate-200 to-slate-300">
+        <div className="absolute bottom-0 left-0 w-full h-full">
+          <div className="absolute bottom-0 left-0 w-full h-3/4 sm:h-full bg-gradient-to-t from-slate-900/95 via-slate-800/90 to-transparent clip-path-projects-mountain-1"></div>
+          <div className="absolute bottom-0 left-0 w-full h-2/3 sm:h-5/6 bg-gradient-to-t from-slate-800/95 via-slate-700/90 to-transparent clip-path-projects-mountain-2"></div>
+          <div className="absolute bottom-0 left-0 w-full h-1/2 sm:h-4/5 bg-gradient-to-t from-slate-700/95 via-slate-600/90 to-transparent clip-path-projects-mountain-3"></div>
+        </div>
+
+        <div className="absolute top-0 left-0 h-full w-2/5 sm:w-3/5 bg-gradient-to-r from-slate-900 via-slate-800 to-transparent clip-path-projects-left-big"></div>
+        <div className="absolute top-0 left-0 h-full w-1/3 sm:w-2/5 bg-gradient-to-r from-slate-800 via-slate-700 to-transparent clip-path-projects-left-medium"></div>
+
+        <div className="absolute top-0 right-0 h-full w-1/3 sm:w-1/2 bg-gradient-to-l from-slate-900 via-slate-800 to-transparent clip-path-projects-right-big"></div>
+
+        <div className="absolute top-0 left-0 h-full w-2/5 sm:w-3/5 bg-gradient-to-r from-white/80 via-white/60 to-transparent clip-path-projects-left-big-snow"></div>
+        <div className="absolute top-0 left-0 h-full w-1/3 sm:w-2/5 bg-gradient-to-r from-white/70 via-white/50 to-transparent clip-path-projects-left-medium-snow"></div>
+        <div className="absolute top-0 right-0 h-full w-1/3 sm:w-1/2 bg-gradient-to-l from-white/80 via-white/60 to-transparent clip-path-projects-right-big-snow"></div>
+        
+        <div className="absolute bottom-0 left-0 w-full h-3/4 sm:h-full bg-gradient-to-t from-white/60 via-white/40 to-transparent clip-path-projects-mountain-1-snow"></div>
+        <div className="absolute bottom-0 left-0 w-full h-2/3 sm:h-5/6 bg-gradient-to-t from-white/50 via-white/30 to-transparent clip-path-projects-mountain-2-snow"></div>
+        <div className="absolute bottom-0 left-0 w-full h-1/2 sm:h-4/5 bg-gradient-to-t from-white/40 via-white/20 to-transparent clip-path-projects-mountain-3-snow"></div>
       </div>
-      <div className="pb-24" />
+
+      <div className="relative z-10">
+        <div className="mt-8 md:mt-32 md:mb-32">
+          <h1 className="flex mx-auto justify-center text-3xl  text-[#23282e] font-mono mb-8 md:mb-32 animate-fade-down duration-1000 underline decoration-blue-400 underline-offset-4 decoration-2">
+            Projects
+          </h1>
+          
+          <div className="animate-fade-up">
+            <ProjectCards cards={projectData} />
+          </div>
+          <div className="pb-24" />
+        </div>
+      </div>
     </div>
   );
 }
