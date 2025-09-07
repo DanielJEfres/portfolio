@@ -51,6 +51,8 @@ export const metadata: Metadata = {
       {
         url: "https://www.danielefres.dev/daniel.png",
         alt: "Daniel Efres — banner",
+        width: 1200,
+        height: 630,
       },
     ],
   },
@@ -62,17 +64,8 @@ export const metadata: Metadata = {
     images: ["https://www.danielefres.dev/daniel.png"],
     creator: "@DanielJEfres",
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true },
-  },
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#F3F4F6" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
-  ],
   metadataBase: new URL("https://www.danielefres.dev"),
-} as Metadata;
+};
 
 export default function RootLayout({
   children,

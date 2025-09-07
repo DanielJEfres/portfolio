@@ -127,7 +127,6 @@ body {
   content: none !important;
 }
 
-/* --- Foothill mountain layers (bottom) --- */
 .clip-path-mountain-1 {
   clip-path: polygon(0% 100%, 10% 85%, 25% 90%, 40% 80%, 55% 92%, 70% 78%, 85% 88%, 100% 80%, 100% 100%);
 }
@@ -144,7 +143,6 @@ body {
   clip-path: polygon(0% 100%, 20% 45%, 40% 55%, 60% 42%, 80% 55%, 100% 48%, 100% 100%);
 }
 
-/* --- Tall Peaks (fix for full height and visible peaks) --- */
 .clip-path-peak-left-back {
   clip-path: polygon(
     0% 100%,
@@ -156,6 +154,7 @@ body {
     45% 100%
   );
 }
+
 .clip-path-peak-left-front {
   clip-path: polygon(
     0% 100%,
@@ -167,6 +166,7 @@ body {
     38% 100%
   );
 }
+
 .clip-path-peak-right-back {
   clip-path: polygon(
     100% 100%,
@@ -178,6 +178,7 @@ body {
     55% 100%
   );
 }
+
 .clip-path-peak-right-front {
   clip-path: polygon(
     100% 100%,

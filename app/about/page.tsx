@@ -4,34 +4,34 @@ import { Metadata } from 'next';
 
 
 export const metadata: Metadata = {
-        title: { default: 'About — Daniel Efres', template: '%s | Daniel Efres' },
-        description:
-            'About Daniel Jose Efres — skills, tools and technologies used across web, desktop and research projects.',
-        keywords: [
-            'Daniel Efres',
-            'Skills',
-            'Programming Languages',
-            'Frameworks',
-            'Developer Tools',
-            'Full Stack',
-        ],
-        authors: [{ name: 'Daniel Jose Efres', url: 'https://danielefres.dev' }],
-        openGraph: {
-                type: 'website',
-                title: 'Daniel Efres | Skills',
-                description:
-                        'Daniel Efres is a software engineer and Computer Science student at UCF. He builds full-stack web apps and tools.',
-                url: 'https://danielefres.dev/about',
-                images: [{ url: 'https://danielefres.dev/images/daniel.png', width: 1200, height: 630 }]
-        },
-        twitter: {
-            card: 'summary_large_image',
-            title: 'Daniel Efres | Skills',
-            description: 'Skills and tools used by Daniel Jose Efres — full-stack web and research projects.',
-            images: ['https://danielefres.dev/images/daniel.png'],
-            creator: '@DanielJEfres'
-        },
-        metadataBase: new URL('https://danielefres.dev')
+  title: { default: "About — Daniel Efres", template: "%s | Daniel Efres" },
+  description:
+    "About Daniel Jose Efres — skills, tools and technologies used across web, desktop and research projects.",
+  keywords: [
+    "Daniel Efres",
+    "Skills",
+    "Programming Languages",
+    "Frameworks",
+    "Developer Tools",
+    "Full Stack",
+  ],
+  authors: [{ name: "Daniel Jose Efres", url: "https://danielefres.dev" }],
+  openGraph: {
+    type: "website",
+    title: "Daniel Efres | Skills",
+    description:
+      "Daniel Efres is a software engineer and Computer Science student at UCF. He builds full-stack web apps and tools.",
+    url: "https://danielefres.dev/about",
+    images: [{ url: "https://danielefres.dev/images/daniel.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Daniel Efres | Skills",
+    description: "Skills and tools used by Daniel Jose Efres — full-stack web and research projects.",
+    images: ["https://danielefres.dev/images/daniel.png"],
+    creator: "@DanielJEfres",
+  },
+  metadataBase: new URL("https://danielefres.dev"),
 };
 
 

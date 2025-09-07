@@ -4,7 +4,7 @@ import Gondola from './gondola';
 
 type Skill = {
   name: string;
-  category: 'frontend' | 'backend' | 'tools' | 'languages' | 'frameworks';
+  category: 'frontend' | 'backend' | 'tools' | 'languages' | 'frameworks' | 'soft' | 'methodologies';
 };
 
 export type Card = {
@@ -31,13 +31,14 @@ const skillCategoryColors = {
   tools: 'bg-purple-200 text-purple-900 border-purple-300',
   languages: 'bg-orange-200 text-orange-900 border-orange-300',
   frameworks: 'bg-pink-200 text-pink-900 border-pink-300',
+  soft: 'bg-yellow-200 text-yellow-900 border-yellow-300',
+  methodologies: 'bg-teal-200 text-teal-900 border-teal-300',
 };
 
 export default function ExperienceCards({ experiences }: CardsProps) {
   return (
     <div className="flex flex-col items-center justify-center px-4 md:px-8">
       <div className="relative w-full max-w-6xl">
-        {/* Enhanced gondola animation */}
         <div className="absolute left-1/2 top-0 h-full w-[2px] transform -translate-x-1/2 hidden lg:block">
           <Gondola />
         </div>
@@ -50,10 +51,8 @@ export default function ExperienceCards({ experiences }: CardsProps) {
             }`} 
             style={{ animationDelay: `${300 * index}ms` }}
           >
-            {/* Experience Card */}
             <div className={`w-full lg:w-[45%] relative group ${index % 2 === 0 ? 'lg:ml-20' : 'lg:mr-20'}`}>
-              <div className="bg-white/95 backdrop-blur-sm border border-slate-200 rounded-2xl transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-500/20 shadow-lg shadow-slate-200/50 overflow-hidden hover:shadow-blue-400/10">
-                {/* Large Image Section - Top Half */}
+              <div className="bg-white/95 backdrop-blur-sm border border-slate-200 rounded-2xl transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl shadow-lg shadow-slate-200/50 overflow-hidden">
                 <div className="relative h-48 lg:h-56 overflow-hidden">
                   <Image 
                     src={item.image} 
@@ -61,10 +60,7 @@ export default function ExperienceCards({ experiences }: CardsProps) {
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  {/* Gradient overlay for better text readability */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                  
-                  {/* Company name overlay */}
                   <div className="absolute bottom-4 left-4 right-4">
                     <h3 className="text-xl lg:text-2xl font-bold mb-1 text-white drop-shadow-2xl">
                       {item.title}
@@ -76,9 +72,7 @@ export default function ExperienceCards({ experiences }: CardsProps) {
                   </div>
                 </div>
 
-                {/* Content Section - Bottom Half */}
                 <div className="p-6">
-                  {/* Date and Location */}
                   <div className="flex items-center gap-4 text-sm text-slate-600 mb-4 font-medium">
                     <div className="flex items-center gap-1">
                       <MapPin size={14} />
@@ -90,12 +84,10 @@ export default function ExperienceCards({ experiences }: CardsProps) {
                     </div>
                   </div>
 
-                  {/* Description */}
                   <p className="text-slate-800 leading-relaxed mb-6 text-sm lg:text-base font-medium">
                     {item.description}
                   </p>
 
-                  {/* Skills Section */}
                   <div className="space-y-3">
                     <div className="flex items-center gap-2 mb-3">
                       <Code2 size={16} className="text-slate-700" />
@@ -116,13 +108,9 @@ export default function ExperienceCards({ experiences }: CardsProps) {
               </div>
             </div>
 
-            {/* Spacer for desktop - increased to give more space for gondola */}
             <div className="hidden lg:block lg:w-[10%]"></div>
 
-            {/* Timeline indicator for mobile */}
-            <div className="lg:hidden flex items-center justify-center my-8">
-              <div className="w-4 h-4 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-lg border-2 border-white"></div>
-            </div>
+            <div className="lg:hidden flex items-center justify-center my-8"></div>
           </div>
         ))}
       </div>
