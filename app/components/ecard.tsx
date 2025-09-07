@@ -62,18 +62,18 @@ export default function ExperienceCards({ experiences }: CardsProps) {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-xl lg:text-2xl font-bold mb-1 text-white drop-shadow-2xl">
+                    <h3 className="text-xl lg:text-2xl font-mono font-bold mb-1 text-white drop-shadow-2xl">
                       {item.title}
                     </h3>
                     <div className="flex items-center gap-2 text-white drop-shadow-lg mb-2">
                       <Building2 size={16} />
-                      <span className="font-semibold">{item.company}</span>
+                      <span className="font-mono font-semibold">{item.company}</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="p-6">
-                  <div className="flex items-center gap-4 text-sm text-slate-600 mb-4 font-medium">
+                  <div className="flex items-center gap-4 text-sm text-slate-600 mb-4 font-mono font-medium">
                     <div className="flex items-center gap-1">
                       <MapPin size={14} />
                       <span>{item.location}</span>
@@ -84,20 +84,20 @@ export default function ExperienceCards({ experiences }: CardsProps) {
                     </div>
                   </div>
 
-                  <p className="text-slate-800 leading-relaxed mb-6 text-sm lg:text-base font-medium">
+                  <p className="text-slate-800 leading-relaxed mb-6 text-sm lg:text-base font-mono font-medium">
                     {item.description}
                   </p>
 
                   <div className="space-y-3">
                     <div className="flex items-center gap-2 mb-3">
                       <Code2 size={16} className="text-slate-700" />
-                      <span className="text-sm font-bold text-slate-800">Technologies & Skills</span>
+                      <span className="text-sm font-mono font-bold text-slate-800">Technologies & Skills</span>
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {item.skills.map((skill, skillIndex) => (
                         <span
                           key={skillIndex}
-                          className={`px-3 py-1.5 text-sm font-semibold rounded-lg border-2 ${skillCategoryColors[skill.category]} transition-all duration-200 hover:scale-105 shadow-sm hover:shadow-md hover:shadow-blue-300/20`}
+                          className={`px-3 py-1.5 text-sm font-mono font-semibold rounded-lg border-2 ${skillCategoryColors[skill.category]} transition-all duration-200 hover:scale-105 shadow-sm hover:shadow-md hover:shadow-blue-300/20`}
                         >
                           {skill.name}
                         </span>
