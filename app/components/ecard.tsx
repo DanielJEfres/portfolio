@@ -1,13 +1,20 @@
 import Image from 'next/image';
-import { CableCar } from 'lucide-react';
+import { MapPin, Calendar, Building2, Code2 } from 'lucide-react';
+import Gondola from './gondola'; 
 
-type Card = {
+type Skill = {
+  name: string;
+  category: 'frontend' | 'backend' | 'tools' | 'languages' | 'frameworks';
+};
+
+export type Card = {
   title: string;
   company: string;
   date: string;
   location: string;
   description: string;
   image: string;
+  skills: Skill[];
   textColor: string;
   borderColor: string;
   hoverBorderColor: string;
@@ -18,37 +25,103 @@ type CardsProps = {
   experiences: Card[];
 };
 
+const skillCategoryColors = {
+  frontend: 'bg-blue-200 text-blue-900 border-blue-300',
+  backend: 'bg-green-200 text-green-900 border-green-300',
+  tools: 'bg-purple-200 text-purple-900 border-purple-300',
+  languages: 'bg-orange-200 text-orange-900 border-orange-300',
+  frameworks: 'bg-pink-200 text-pink-900 border-pink-300',
+};
+
 export default function ExperienceCards({ experiences }: CardsProps) {
   return (
     <div className="flex flex-col items-center justify-center px-4 md:px-8">
-      <div className="relative w-full max-w-5xl">
-        <div className="absolute left-1/2 top-0 h-full w-[1px] bg-[#23282e] transform -translate-x-1/2 hidden sm:block">
-          <div className="absolute animate-cable-car">
-            <CableCar size={35} color="black" className="transform -translate-x-1/2" />
-          </div>
+      <div className="relative w-full max-w-6xl">
+        {/* Enhanced gondola animation */}
+        <div className="absolute left-1/2 top-0 h-full w-[2px] transform -translate-x-1/2 hidden lg:block">
+          <Gondola />
         </div>
 
         {experiences.map((item, index) => (
-          <div key={index} className={`flex flex-col sm:flex-row items-center mb-24 animate-duration-1000 animate-fade-down ${index % 2 === 0 ? 'sm:flex-row-reverse' : 'sm:flex-row' }`} style={{ animationDelay: `${2200 * index}ms`,}}>
-            <div
-              className={`w-full sm:w-[48%] p-6 rounded-3xl text-[#23282e] shadow-lg border-2 ${item.borderColor} ${item.hoverBorderColor} hover:${item.hoverTextColor} transform transition-all`}>
-              <h3 className={`text-lg sm:text-xl font-mono font-bold mb-2 ${item.textColor}`}>
-                {item.title}
-              </h3>
-              <p className="text-sm sm:text-base font-mono mb-2">
-                {item.company} • {item.location}
-              </p>
-              <p className="text-base sm:text-lg font-mono font-bold mb-2">{item.date}</p>
-              <p className="text-sm sm:text-base font-mono">{item.description}</p>
-              <div className="flex justify-center items-center mt-8 mb-0 md:hidden">
-                <div className="w-[200px] h-[200px] relative">
-                  <Image src={item.image} alt={item.title} layout="fill" objectFit="cover" className="rounded-2xl shadow-lg"/>
+          <div 
+            key={index} 
+            className={`flex flex-col lg:flex-row items-center mb-16 lg:mb-24 animate-duration-1000 animate-fade-down ${
+              index % 2 === 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'
+            }`} 
+            style={{ animationDelay: `${300 * index}ms` }}
+          >
+            {/* Experience Card */}
+            <div className={`w-full lg:w-[45%] relative group ${index % 2 === 0 ? 'lg:ml-20' : 'lg:mr-20'}`}>
+              <div className="bg-white/95 backdrop-blur-sm border border-slate-200 rounded-2xl transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-500/20 shadow-lg shadow-slate-200/50 overflow-hidden hover:shadow-blue-400/10">
+                {/* Large Image Section - Top Half */}
+                <div className="relative h-48 lg:h-56 overflow-hidden">
+                  <Image 
+                    src={item.image} 
+                    alt={`${item.company} logo`} 
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  {/* Gradient overlay for better text readability */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                  
+                  {/* Company name overlay */}
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="text-xl lg:text-2xl font-bold mb-1 text-white drop-shadow-2xl">
+                      {item.title}
+                    </h3>
+                    <div className="flex items-center gap-2 text-white drop-shadow-lg mb-2">
+                      <Building2 size={16} />
+                      <span className="font-semibold">{item.company}</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Content Section - Bottom Half */}
+                <div className="p-6">
+                  {/* Date and Location */}
+                  <div className="flex items-center gap-4 text-sm text-slate-600 mb-4 font-medium">
+                    <div className="flex items-center gap-1">
+                      <MapPin size={14} />
+                      <span>{item.location}</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Calendar size={14} />
+                      <span>{item.date}</span>
+                    </div>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-slate-800 leading-relaxed mb-6 text-sm lg:text-base font-medium">
+                    {item.description}
+                  </p>
+
+                  {/* Skills Section */}
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Code2 size={16} className="text-slate-700" />
+                      <span className="text-sm font-bold text-slate-800">Technologies & Skills</span>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {item.skills.map((skill, skillIndex) => (
+                        <span
+                          key={skillIndex}
+                          className={`px-3 py-1.5 text-sm font-semibold rounded-lg border-2 ${skillCategoryColors[skill.category]} transition-all duration-200 hover:scale-105 shadow-sm hover:shadow-md hover:shadow-blue-300/20`}
+                        >
+                          {skill.name}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="hidden sm:block sm:w-[48px]"></div>
-            <div className="w-[200px] h-[200px] relative mt-4 mb-8 hidden md:block">
-              <Image src={item.image} alt={item.title} layout="fill" objectFit="cover" className="rounded-2xl shadow-lg"/>
+
+            {/* Spacer for desktop - increased to give more space for gondola */}
+            <div className="hidden lg:block lg:w-[10%]"></div>
+
+            {/* Timeline indicator for mobile */}
+            <div className="lg:hidden flex items-center justify-center my-8">
+              <div className="w-4 h-4 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-lg border-2 border-white"></div>
             </div>
           </div>
         ))}
