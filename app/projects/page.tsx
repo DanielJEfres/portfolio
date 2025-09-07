@@ -4,31 +4,35 @@ import { Metadata } from 'next';
 
 
 export const metadata: Metadata = {
-  title: "Daniel Efres",
+  title: "Projects | Daniel Efres",
   description:
-    "Daniel Efres is an undergraduate student at the University of Central Florida and an aspiring software engineer.",
-  keywords: [
-    "Daniel Efres",
-    "Software Engineer",
-    "UCF",
-    "University of Central Florida",
-    "Knight Hacks",
-    "Hackathon Organizer",
-    "Full Stack Developer",
-    "Web Development",
-    "React",
-    "TypeScript",
-    "Next.js",
-    "Open Source",
+    "Explore projects by Daniel Efres, a Software Engineer at UCF TechRangers and former BNY intern. He builds full-stack applications, applies machine learning, and creates tools to help others break into tech.",
+  openGraph: {
+    type: "website",
+    url: "https://www.danielefres.dev/projects",
+    title: "Projects | Daniel Efres",
+    description:
+      "Explore projects by Daniel Efres, a Software Engineer at UCF TechRangers and former BNY intern. He builds full-stack applications, applies machine learning, and creates tools to help others break into tech.",
+    images: [
+      {
+        url: "https://www.danielefres.dev/images/daniel.png",
+        alt: "Daniel Efres — banner",
+      },
     ],
-    openGraph: {
-        type: "website",
-        title: "Daniel Efres | Projects",
-        description:
-          "Daniel Efres is a software engineer and Computer Science student at UCF. He builds full-stack web apps, organizes hackathons, and creates accessible tools for creative communities.",
-  url: "https://www.danielefres.dev/projects",
-  images: [{ url: "https://www.danielefres.dev/images/daniel.png" }]
-    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Projects | Daniel Efres",
+    description:
+      "Explore projects by Daniel Efres, a Software Engineer at UCF TechRangers and former BNY intern. He builds full-stack applications, applies machine learning, and creates tools to help others break into tech.",
+    images: [
+      {
+        url: "https://www.danielefres.dev/images/daniel.png",
+        alt: "Daniel Efres — banner",
+      },
+    ],
+    creator: "@DanielJEfres",
+  },
 };
 
 

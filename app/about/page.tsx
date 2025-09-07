@@ -4,35 +4,39 @@ import { Metadata } from 'next';
 
 
 export const metadata: Metadata = {
-  title: { default: "About — Daniel Efres", template: "%s | Daniel Efres" },
+  title: "About | Daniel Efres",
   description:
-    "About Daniel Jose Efres — skills, tools and technologies used across web, desktop and research projects.",
-  keywords: [
-    "Daniel Efres",
-    "Skills",
-    "Programming Languages",
-    "Frameworks",
-    "Developer Tools",
-    "Full Stack",
-  ],
-    authors: [{ name: "Daniel Jose Efres", url: "https://www.danielefres.dev" }],
+    "Learn about Daniel Efres — Software Engineer at UCF TechRangers, former BNY intern, secretary of Knight Hacks, and Computer Science junior at UCF. Passionate about full stack development, machine learning, and helping others break into the tech market.",
+  authors: [{ name: "Daniel Jose Efres", url: "https://www.danielefres.dev" }],
   openGraph: {
     type: "website",
-    title: "Daniel Efres | Skills",
+    url: "https://www.danielefres.dev/about",
+    title: "About | Daniel Efres",
     description:
-      "Daniel Efres is a software engineer and Computer Science student at UCF. He builds full-stack web apps and tools.",
-        url: "https://www.danielefres.dev/about",
-        images: [{ url: "https://www.danielefres.dev/images/daniel.png" }],
+      "Learn about Daniel Efres — Software Engineer at UCF TechRangers, former BNY intern, secretary of Knight Hacks, and Computer Science junior at UCF. Passionate about full stack development, machine learning, and helping others break into the tech market.",
+    images: [
+      {
+        url: "https://www.danielefres.dev/images/daniel.png",
+        alt: "Daniel Efres — banner",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Daniel Efres | Skills",
-    description: "Skills and tools used by Daniel Jose Efres — full-stack web and research projects.",
-        images: ["https://www.danielefres.dev/images/daniel.png"],
+    title: "About | Daniel Efres",
+    description:
+      "Learn about Daniel Efres — Software Engineer at UCF TechRangers, former BNY intern, secretary of Knight Hacks, and Computer Science junior at UCF. Passionate about full stack development, machine learning, and helping others break into the tech market.",
+    images: [
+      {
+        url: "https://www.danielefres.dev/images/daniel.png",
+        alt: "Daniel Efres — banner",
+      },
+    ],
     creator: "@DanielJEfres",
   },
-    metadataBase: new URL("https://www.danielefres.dev"),
 };
+
+
 
 
 export default function AboutMe() {
