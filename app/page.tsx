@@ -1,6 +1,29 @@
 import Typewriters from './components/typewriter';
 import SocialLinks from './components/socialsbuttons';
 import Snow from './components/snow';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Daniel Efres',
+    description:
+        "Daniel Efres is an undergraduate student at the University of Central Florida and an aspiring software engineer.",
+    openGraph: {
+        type: 'website',
+        url: 'https://www.danielefres.dev/',
+        title: 'Daniel Efres',
+        description:
+            "Daniel Efres is an undergraduate student at the University of Central Florida and an aspiring software engineer.",
+        images: [{ url: 'https://www.danielefres.dev/images/daniel.png' }],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Daniel Efres',
+        description:
+            "Daniel Efres is an undergraduate student at the University of Central Florida and an aspiring software engineer.",
+        images: ['https://www.danielefres.dev/images/daniel.png'],
+        creator: '@DanielJEfres',
+    },
+};
 
 export default function Home() {
     return (

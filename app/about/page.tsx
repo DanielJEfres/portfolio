@@ -15,23 +15,23 @@ export const metadata: Metadata = {
     "Developer Tools",
     "Full Stack",
   ],
-  authors: [{ name: "Daniel Jose Efres", url: "https://danielefres.dev" }],
+    authors: [{ name: "Daniel Jose Efres", url: "https://www.danielefres.dev" }],
   openGraph: {
     type: "website",
     title: "Daniel Efres | Skills",
     description:
       "Daniel Efres is a software engineer and Computer Science student at UCF. He builds full-stack web apps and tools.",
-    url: "https://danielefres.dev/about",
-    images: [{ url: "https://danielefres.dev/images/daniel.png", width: 1200, height: 630 }],
+        url: "https://www.danielefres.dev/about",
+        images: [{ url: "https://www.danielefres.dev/images/daniel.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Daniel Efres | Skills",
     description: "Skills and tools used by Daniel Jose Efres — full-stack web and research projects.",
-    images: ["https://danielefres.dev/images/daniel.png"],
+        images: ["https://www.danielefres.dev/images/daniel.png"],
     creator: "@DanielJEfres",
   },
-  metadataBase: new URL("https://danielefres.dev"),
+    metadataBase: new URL("https://www.danielefres.dev"),
 };
 
 

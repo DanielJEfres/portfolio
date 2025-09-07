@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
-            url: "https://www.danielefres.dev/skills",
+            url: "https://www.danielefres.dev/about",
             lastModified: new Date(),
             priority: 0.7,
         },

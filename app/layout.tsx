@@ -49,10 +49,8 @@ export const metadata: Metadata = {
     siteName: "Daniel Efres",
     images: [
       {
-        url: "https://www.danielefres.dev/daniel.png",
+        url: "https://www.danielefres.dev/images/daniel.png",
         alt: "Daniel Efres — banner",
-        width: 1200,
-        height: 630,
       },
     ],
   },
@@ -61,7 +59,7 @@ export const metadata: Metadata = {
     title: "About | Daniel Efres",
     description:
       "Daniel Efres is an undergraduate student at the University of Central Florida who is passionate about software engineering. He's a previous intern at BNY and specializes in full-stack development, machine learning, and more!",
-    images: ["https://www.danielefres.dev/daniel.png"],
+  images: ["https://www.danielefres.dev/images/daniel.png"],
     creator: "@DanielJEfres",
   },
   metadataBase: new URL("https://www.danielefres.dev"),

@@ -27,18 +27,18 @@ export const metadata: Metadata = {
     title: "Daniel Efres | Experience",
     description:
       "Daniel Efres is a software engineer and Computer Science student at UCF. He builds full-stack web apps, organizes hackathons, and creates accessible tools for creative communities.",
-    url: "https://danielefres.dev/experience",
-    images: [{ url: "https://danielefres.dev/images/daniel.png", width: 1200, height: 630 }],
+    url: "https://www.danielefres.dev/experience",
+    images: [{ url: "https://www.danielefres.dev/images/daniel.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Daniel Efres | Experience",
     description:
       "Daniel Efres is a software engineer and Computer Science student at UCF. He builds full-stack web apps, organizes hackathons, and creates accessible tools for creative communities.",
-    images: ["https://danielefres.dev/images/daniel.png"],
+    images: ["https://www.danielefres.dev/images/daniel.png"],
     creator: "@DanielJEfres",
   },
-  metadataBase: new URL("https://danielefres.dev"),
+  metadataBase: new URL("https://www.danielefres.dev"),
 };
 
 const experiences: Card[] = [
