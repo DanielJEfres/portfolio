@@ -100,6 +100,8 @@ function ProjectDialog({ project, isOpen, onClose }: { project: ProjectData | nu
                   src={project.images[0].src}
                   alt={project.title}
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               ) : (
                 <Image
@@ -107,6 +109,7 @@ function ProjectDialog({ project, isOpen, onClose }: { project: ProjectData | nu
                   alt={project.title}
                   fill
                   className="object-cover"
+                  priority={false}
                 />
               )}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -257,6 +260,8 @@ export default function ProjectShowcase({ cards }: CardsProps) {
                       src={project.images[0].src}
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      loading="lazy"
+                      decoding="async"
                     />
                   ) : (
                     <Image
@@ -264,6 +269,7 @@ export default function ProjectShowcase({ cards }: CardsProps) {
                       alt={project.title}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      priority={false}
                     />
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
