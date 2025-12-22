@@ -40,6 +40,59 @@ export const metadata: Metadata = {
 export default function Projects() {
   const projectData: ProjectData[] = [
     {
+      id: 'ctrl-arm',
+      title: 'Ctrl-ARM',
+      period: 'Sep 2025 – Present',
+      description: 'Ctrl-ARM is a muscle-controlled computer accessibility system that translates EMG muscle signals, arm motion, and voice input into real-time OS commands for hands-free interaction.',
+      longDescription: 'Ctrl-ARM is a multimodal human–computer interaction platform that fuses electromyography (EMG) signals with inertial measurement data to create a low-latency, hands-free control system. EMG data captured at 200Hz using MyoWare 2.0 sensors is combined with accelerometer and gyroscope readings from a Seeed Studio XIAO Sense to model both muscle intent and arm motion. A feature extraction pipeline identifies gestures such as taps, holds, and twists, which are classified using a lightweight decision tree optimized for real-time inference. The system prioritizes responsiveness over heavyweight deep learning models, achieving ~90% post-calibration accuracy with minimal latency. Voice input is layered on top using Whisper for speech-to-text and Gemini for natural language understanding, enabling seamless multimodal control. A Python backend handles real-time signal processing, while an Electron + React overlay provides a responsive user interface. The modular architecture supports future expansion into additional muscle groups, haptic feedback, and 3D gesture recognition.',
+      features: [
+        'Real-time EMG + IMU sensor fusion at 200Hz',
+        'Decision tree–based gesture classification optimized for low latency',
+        'User-specific calibration to adapt to muscle variability and fatigue',
+        'Multimodal control combining muscle gestures and voice commands',
+        'Electron + React overlay for system-level interaction',
+        'Extensible architecture for accessibility, gaming, and professional workflows',
+        '🏆 1st Place — ShellHacks 2025 Microsoft AI Challenge'
+      ],
+      images: [
+        {
+          src: '/ctrlarm.gif',
+          title: 'Ctrl-ARM Gesture Control Demo',
+          isGif: true
+        }
+      ],
+      colors: {
+        cardColor: '#0f172a',
+        accent: '#22c55e',
+        textColor: '#e5e7eb'
+      },
+      links: [
+        {
+          label: 'GitHub',
+          url: 'https://github.com/DanielJEfres/ctrl-arm',
+          icon: 'github'
+        },
+        {
+          label: 'Demo Reel',
+          url: 'https://www.instagram.com/reel/DP4fuzejhiv/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==',
+          icon: 'external'
+        }
+      ],
+      skills: [
+        'Python',
+        'C++',
+        'Electron',
+        'React',
+        'scikit-learn',
+        'TensorFlow',
+        'Arduino',
+        'MyoWare EMG',
+        'XIAO Sense',
+        'Whisper',
+        'Gemini'
+      ]
+    },
+    { 
       id: 'pheratech',
       title: 'Pheratech Systems',
       period: 'Aug 2025 - Sep 2025',
